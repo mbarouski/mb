@@ -1,0 +1,12 @@
+.image {
+  &.is-256x256 {
+    width: 256px;
+    height: 256px;
+  
+    img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+  }
+}
