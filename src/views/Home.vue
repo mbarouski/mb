@@ -60,6 +60,7 @@
                 <b-icon pack="fab" icon="stack-overflow" size="is-medium" />
               </a>
             </li>
+            <!-- TODO: Add habr link -->
           </ul>
         </div>
       </div>

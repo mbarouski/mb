@@ -1,4 +1,4 @@
-# maksim_barouski_website
+# My personal page
 
 ## Project setup
 ```
