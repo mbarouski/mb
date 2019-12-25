@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  publicPath: './',
   lintOnSave: false,
   chainWebpack: config => {
     const types = ["vue-modules", "vue", "normal-modules", "normal"];
