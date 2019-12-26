@@ -342,9 +342,17 @@
             <span class="is-size-7">2016-2017</span>
           </div>
           <div class="project-item column">
+            <div class="project-preview-container">
+              <img src="../assets/images/phoenixpay.jpeg" />
+            </div>
+            <h3><a>PhoenixPay (startup)</a></h3>
+            <p>Play Market for everything</p>
+            <span class="is-size-7">Software engineer</span><br />
+            <span class="is-size-7">2016-2017</span>
+          </div>
+          <div class="project-item column">
             <p>Will be added soon...</p>
           </div>
-          <div class="project-item column"></div>
         </div>
       </div>
     </section>
