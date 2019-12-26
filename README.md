@@ -29,4 +29,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - add education info
 - add links to my habr articles
 - add link to my room on HearHear
+- add image viewer
 - `refactor`

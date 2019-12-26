@@ -351,7 +351,13 @@
             <span class="is-size-7">2016-2017</span>
           </div>
           <div class="project-item column">
-            <p>Will be added soon...</p>
+            <div class="project-preview-container">
+              <img src="../assets/images/trailer.jpg" />
+            </div>
+            <h3><a>Trailer</a></h3>
+            <p>It is a "hello world" in welding sphere for me.</p>
+            <span class="is-size-7">Welder, designer, painter</span><br />
+            <span class="is-size-7">2019</span>
           </div>
         </div>
       </div>
