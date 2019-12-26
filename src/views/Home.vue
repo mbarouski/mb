@@ -317,7 +317,7 @@
               Linux, Git, MacOS, iOS, Android, Blender, Unity, Twilio, SSR,
               FPGA, Arduino, 3d-modelling, JWT, Cypress, Gatling, Jetty, Apache,
               Nginx, OpenLDAP, OpenIDConnect, Stripe, GDPR, Google Analytics,
-              GrpahQL, Webpack, Avro, CircleCI, ...
+              GrpahQL, Webpack, Avro, CircleCI, CSS, SCSS, ...
             </h3>
           </div>
         </div>
@@ -439,6 +439,7 @@ export default {
 
     img {
       width: 100%;
+      border-radius: 0.25rem;
     }
   }
 }
