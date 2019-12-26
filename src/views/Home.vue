@@ -317,7 +317,7 @@
               Linux, Git, MacOS, iOS, Android, Blender, Unity, Twilio, SSR,
               FPGA, Arduino, 3d-modelling, JWT, Cypress, Gatling, Jetty, Apache,
               Nginx, OpenLDAP, OpenIDConnect, Stripe, GDPR, Google Analytics,
-              GrpahQL, Webpack, Avro,...
+              GrpahQL, Webpack, Avro, CircleCI, ...
             </h3>
           </div>
         </div>
