@@ -10,9 +10,15 @@
           <div class="short-info-container">
             <h1 class="title">Maksim Barouski</h1>
             <ul>
-              <li>Software engineer</li>
               <li>
-                Master course student at <a style="color: #FFDD57;">BSUIR</a>
+                Software engineer at
+                <a href="http://senior-node.com" style="color: #FFDD57;"
+                  >Senior Node</a
+                >
+              </li>
+              <li>
+                Master course student at
+                <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a>
               </li>
             </ul>
           </div>
@@ -91,7 +97,7 @@
             </div>
             <h3><a href="https://app.visualserver.com/">Visual Server</a></h3>
             <p>Website builder for artists</p>
-            <span class="is-size-7">Node.js full-stack developer</span><br />
+            <span class="is-size-7">Node.js + Angular developer</span><br />
             <span class="is-size-7">2017-2018</span>
           </div>
           <div class="project-item column">
@@ -103,8 +109,7 @@
               EarthToday is a community-driven content platform to inform,
               inspire, educate and entertain.
             </p>
-            <span class="is-size-7"
-              >Software engineer (Java + Angular full-stack)</span
+            <span class="is-size-7">Software engineer (Java + Angular)</span
             ><br />
             <span class="is-size-7">2018-now</span>
           </div>
@@ -114,9 +119,7 @@
             </div>
             <h3><a href="https://hearhear.app">HearHear</a></h3>
             <p>Ask anybody, anything. Together, we will get an answer.</p>
-            <span class="is-size-7"
-              >Software engineer (Java + Vue full-stack)</span
-            ><br />
+            <span class="is-size-7">Software engineer (Java + Vue)</span><br />
             <span class="is-size-7">2019-now</span>
           </div>
         </div>
