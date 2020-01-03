@@ -93,6 +93,20 @@
         <div class="projects columns">
           <div class="project-item column">
             <div class="logo-container">
+              <img src="../assets/images/ezispeak.png" />
+            </div>
+            <h3>
+              <a
+                href="https://apps.apple.com/us/app/ezispeak-video-interpreter/id1256607378"
+                >Ezispeak Video Interpreter</a
+              >
+            </h3>
+            <span class="is-size-7">Node.js + React and Swift developer</span
+            ><br />
+            <span class="is-size-7">2017</span>
+          </div>
+          <div class="project-item column">
+            <div class="logo-container">
               <img src="../assets/images/vs.png" />
             </div>
             <h3><a href="https://app.visualserver.com/">Visual Server</a></h3>
@@ -113,6 +127,8 @@
             ><br />
             <span class="is-size-7">2018-now</span>
           </div>
+        </div>
+        <div class="projects columns">
           <div class="project-item column">
             <div class="logo-container">
               <img src="../assets/images/hh.svg" />
@@ -122,6 +138,8 @@
             <span class="is-size-7">Software engineer (Java + Vue)</span><br />
             <span class="is-size-7">2019-now</span>
           </div>
+          <div class="project-item column"></div>
+          <div class="project-item column"></div>
         </div>
       </div>
     </section>
@@ -354,11 +372,34 @@
             <div class="project-preview-container">
               <img src="../assets/images/trailer.jpg" />
             </div>
-            <h3><a>Trailer</a></h3>
+            <h3><router-link to="/trailer">Trailer</router-link></h3>
             <p>It is a "hello world" in welding sphere for me.</p>
             <span class="is-size-7">Welder, designer, painter</span><br />
             <span class="is-size-7">2019</span>
           </div>
+        </div>
+        <div class="projects columns">
+          <div class="project-item column">
+            <div class="project-preview-container">
+              <img src="../assets/images/family-calendar.jpeg" />
+            </div>
+            <h3><a>Family calendar</a></h3>
+            <p>
+              Android application on Ionic + Angular and backend with Node.js
+            </p>
+            <span class="is-size-7">Backend Node.js developer</span><br />
+            <span class="is-size-7">2019</span>
+          </div>
+          <div class="project-item column">
+            <div class="project-preview-container">
+              <img src="../assets/images/skaz.png" />
+            </div>
+            <h3><a>Skaz</a></h3>
+            <p>Website for selling books.</p>
+            <span class="is-size-7">Angular developer</span><br />
+            <span class="is-size-7">2019</span>
+          </div>
+          <div class="project-item column"></div>
         </div>
       </div>
     </section>
