@@ -385,7 +385,7 @@
             </div>
             <h3><a>Family calendar</a></h3>
             <p>
-              Android application on Ionic + Angular and backend with Node.js
+              Android application on Ionic + Angular with backend on Node.js
             </p>
             <span class="is-size-7">Backend Node.js developer</span><br />
             <span class="is-size-7">2019</span>
