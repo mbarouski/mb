@@ -5,12 +5,12 @@
         <PageHeader :title="'My articles'" />
         <div class="articles">
           <div class="article">
-            <a href="https://habr.com/ru/post/429472/"
+            <a href="https://habr.com/ru/post/429472/" target="_blank"
               >Docker Compose + Consul + Spring Boot + FeignClient</a
             >
           </div>
           <div class="article">
-            <a href="https://habr.com/ru/post/434902/"
+            <a href="https://habr.com/ru/post/434902/" target="_blank"
               >Создание кастомного генератора запросов в Spring Data Neo4j
               (Часть 1)</a
             >
