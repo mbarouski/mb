@@ -20,9 +20,13 @@ jobs:
     - name: Prepare
       run: |
         yarn
-        ./prepare-for-deploy.sh
+        ./prepare-for-publish.sh
       env:
         CI: true
-    - name: Deploy
+    - name: Install surge and Deploy
       run: |
+        npm i -g surge
         ./deploy-to-surge.sh
+      env:
+        SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+        SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
