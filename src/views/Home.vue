@@ -186,10 +186,9 @@ export default {
         margin: 0.5rem;
 
         a {
-          text-decoration: underline;
-
           &:hover {
             color: $color-yellow;
+            text-decoration: underline;
           }
         }
       }
