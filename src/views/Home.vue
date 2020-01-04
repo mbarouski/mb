@@ -381,6 +381,16 @@
         <div class="projects columns">
           <div class="project-item column">
             <div class="project-preview-container">
+              <img src="../assets/images/habr.png" />
+            </div>
+            <h3>
+              <router-link to="/habr-articles">Habr articles</router-link>
+            </h3>
+            <span class="is-size-7">Writer</span><br />
+            <span class="is-size-7">2018-now</span>
+          </div>
+          <div class="project-item column">
+            <div class="project-preview-container">
               <img src="../assets/images/family-calendar.jpeg" />
             </div>
             <h3><a>Family calendar</a></h3>
@@ -399,7 +409,6 @@
             <span class="is-size-7">Angular developer</span><br />
             <span class="is-size-7">2019</span>
           </div>
-          <div class="project-item column"></div>
         </div>
       </div>
     </section>
@@ -481,6 +490,8 @@ export default {
     img {
       width: 100%;
       border-radius: 0.25rem;
+      object-fit: cover;
+      border: 1px solid #eee;
     }
   }
 }

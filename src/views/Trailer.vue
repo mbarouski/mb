@@ -2,8 +2,8 @@
   <div class="page trailer-page">
     <section class="section">
       <div class="container">
-        <h1 class="title">Project: Trailer</h1>
         <router-link class="main-link" to="/">main</router-link>
+        <h1 class="title">Project: Trailer</h1>
         <div class="slides">
           <div class="slide">
             <div class="slide-content slide-content--instagram">

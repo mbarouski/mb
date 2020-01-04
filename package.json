@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "BASE_URL=/ vue-cli-service serve",
+    "build": "BASE_URL=/mb vue-cli-service build",
     "lint": "vue-cli-service lint ./src/**/*.js ./src/**/*.vue"
   },
   "dependencies": {

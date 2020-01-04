@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Trailer from "../views/Trailer.vue";
+import HabrArticles from "../views/HabrArticles.vue";
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,11 @@ const routes = [
     component: Trailer
   },
   {
+    path: "/habr-articles",
+    name: "habr-articles",
+    component: HabrArticles
+  },
+  {
     path: "/*",
     redirect: {
       name: "home"
@@ -26,7 +32,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: "history",
-  base: "/mb" || process.env.BASE_URL,
+  base: process.env.BASE_URL,
   routes
 });
 
