@@ -1,6 +1,5 @@
-rm -rf docs
+rm -rf dist
 yarn build
-mv dist docs
-# to resolve any unmatched path with index.html
-# https://github.com/isaacs/github/issues/408#issuecomment-114326735
-cp docs/index.html docs/200.html
+# to resolve any unmatched path with 200.html which is a copy of index.html :D
+# https://surge.sh/help/adding-a-200-page-for-client-side-routing
+cp dist/index.html dist/200.html
