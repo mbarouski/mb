@@ -1,1 +1,1 @@
-surge $PWD/dist maksim-barouski.surge.sh
+surge $PWD/dist https://maksim-barouski.surge.sh
