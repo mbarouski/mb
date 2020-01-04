@@ -18,6 +18,9 @@ export default {
     PageHeader,
     ProjectList
   },
+  mounted() {
+    this.$ga.page("/projects");
+  },
   data: () => ({
     projects: [
       {

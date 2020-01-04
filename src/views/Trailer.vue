@@ -42,6 +42,9 @@
 export default {
   name: "trailer",
   components: {},
+  mounted() {
+    this.$ga.page("/trailer");
+  },
   data: () => ({
     slides: [
       {

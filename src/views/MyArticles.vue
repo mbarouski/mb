@@ -29,7 +29,10 @@ export default {
   components: {
     PageHeader
   },
-  data: () => ({})
+  data: () => ({}),
+  mounted() {
+    this.$ga.page("/my-articles");
+  }
 };
 </script>
 

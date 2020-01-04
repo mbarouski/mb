@@ -62,7 +62,10 @@ export default {
         labels: ["angular", "frontend", "2019"]
       }
     ]
-  })
+  }),
+  mounted() {
+    this.$ga.page("/side-projects");
+  }
 };
 </script>
 

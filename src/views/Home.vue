@@ -123,7 +123,10 @@
 <script>
 export default {
   name: "home",
-  components: {}
+  components: {},
+  mounted() {
+    this.$ga.page("/");
+  }
 };
 </script>
 
