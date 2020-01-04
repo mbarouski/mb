@@ -86,6 +86,13 @@
       </div>
     </section>
 
+    <p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
+      Ask me anything in
+      <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
+    </p>
+
+    <hr class="hr" />
+
     <section class="section mb-footer-section">
       <div class="container mb-footer">
         <div class="page-link">
@@ -174,8 +181,21 @@ export default {
     margin: 1rem 5rem;
   }
 
+  .ask-me-section {
+    a {
+      background: $color-purple;
+      color: $color-yellow;
+      padding: 0.25rem;
+      border-radius: 0.25rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   .mb-footer-section {
-    padding: 1rem 0 0 0;
+    padding: 0;
 
     .mb-footer {
       display: flex;
