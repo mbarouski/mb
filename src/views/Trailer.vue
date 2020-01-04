@@ -27,7 +27,7 @@
               <p>{{ i + 1 + ". " + slide.description }}</p>
               <img
                 :class="{ rotate90: slide.rotate90 }"
-                :src="publicPath + 'images/trailer/' + slide.image"
+                :src="'images/trailer/' + slide.image"
                 lazy
               />
             </div>
@@ -43,7 +43,6 @@ export default {
   name: "trailer",
   components: {},
   data: () => ({
-    publicPath: process.env.BASE_URL,
     slides: [
       {
         image: "1.JPG",

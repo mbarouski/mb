@@ -1,9 +1,8 @@
 <template>
-  <div class="page habr-articles-page">
+  <div class="page my-articles-page">
     <section class="section">
       <div class="container">
-        <router-link class="main-link" to="/">main</router-link>
-        <h1 class="title">Habr articles</h1>
+        <PageHeader :title="'My articles'" />
         <div class="articles">
           <div class="article">
             <a href="https://habr.com/ru/post/429472/"
@@ -23,15 +22,19 @@
 </template>
 
 <script>
+import PageHeader from "../components/PageHeader";
+
 export default {
-  name: "habr-articles",
-  components: {},
+  name: "my-articles",
+  components: {
+    PageHeader
+  },
   data: () => ({})
 };
 </script>
 
 <style scoped lang="scss">
-.habr-articles-page {
+.my-articles-page {
   .main-link {
     display: block;
     margin-bottom: 1rem;
