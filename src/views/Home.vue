@@ -100,7 +100,7 @@
         </div>
         <div class="page-link">
           <router-link to="/technologies"
-            >Technologies I touched to 👉</router-link
+            >Technologies I touched to</router-link
           >
         </div>
         <div class="page-link">
