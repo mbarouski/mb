@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss">
 .project-item {
-  width: 18rem;
+  width: 100%;
   box-shadow: 3px 4px 10px 0px rgba(204, 204, 204, 0.25);
   border: 1px solid $color-lighter-grey;
   border-radius: 0.5rem;

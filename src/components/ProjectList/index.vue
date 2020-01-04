@@ -23,12 +23,20 @@ export default {
 
 <style lang="scss">
 .project-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+
+  @media only screen and (max-width: 920px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .project-item {
-    margin: 1rem;
-
     @media only screen and (max-width: 480px) {
       margin: 0 0 1rem 0;
     }

@@ -64,7 +64,9 @@ export default {
     ]
   }),
   mounted() {
-    this.$ga.page("/side-projects");
+    if (this.$ga) {
+      this.$ga.page("/side-projects");
+    }
   }
 };
 </script>
