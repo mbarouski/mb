@@ -1,6 +1,5 @@
-rm -rf docs
+rm -rf dist
 yarn build
-mv dist docs
 # to resolve any unmatched path with index.html
 # https://github.com/isaacs/github/issues/408#issuecomment-114326735
-cp docs/index.html docs/200.html
+cp dist/index.html dist/200.html

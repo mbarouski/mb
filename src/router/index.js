@@ -51,10 +51,9 @@ const routes = [
 function getRouterBaseUrl() {
   switch (process.env.NODE_ENV) {
     case "development":
-      return "/";
     case "production":
     default:
-      return "/mb";
+      return "/";
   }
 }
 
