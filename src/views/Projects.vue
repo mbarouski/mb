@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <PageHeader :title="'Projects I am/was working on'" />
-        <ProjectList :projects="projects" />
+        <ProjectList :projects="projects" :columns="4" />
       </div>
     </section>
   </div>
@@ -65,6 +65,9 @@ export default {
 
 <style lang="scss">
 .projects-page {
+  background: $color-lighter-grey;
+  min-height: 100vh;
+
   .project-item {
     .project-item__image-container {
       margin: 0.5rem 0;

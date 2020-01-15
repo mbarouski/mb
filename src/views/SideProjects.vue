@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container">
         <PageHeader :title="'Side projects'" />
-        <ProjectList :projects="projects" />
+        <ProjectList :projects="projects" :columns="4" />
       </div>
     </section>
   </div>
@@ -73,5 +73,7 @@ export default {
 
 <style lang="scss">
 .side-projects-page {
+  background: $color-lighter-grey;
+  min-height: 100vh;
 }
 </style>

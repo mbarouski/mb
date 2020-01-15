@@ -1,5 +1,5 @@
 <template>
-  <div class="project-list">
+  <div :class="'project-list project-list--grid-' + columns">
     <ProjectItem
       v-for="project in projects"
       :key="project.name"
@@ -16,7 +16,11 @@ export default {
     ProjectItem
   },
   props: {
-    projects: Array
+    projects: Array,
+    columns: {
+      type: Number,
+      default: 3
+    }
   }
 };
 </script>
@@ -24,16 +28,28 @@ export default {
 <style lang="scss">
 .project-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  &.project-list--grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.project-list--grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   @media only screen and (max-width: 920px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  @media only screen and (max-width: 720px) {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 
   @media only screen and (max-width: 480px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 
   .project-item {

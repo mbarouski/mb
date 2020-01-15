@@ -1,2 +1,7 @@
 @import 'typography';
 @import 'colors';
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
