@@ -1,7 +1,8 @@
 <template>
   <div class="project-item">
     <div class="project-item__image-container">
-      <img :src="'images/' + project.image" />
+      <ImageSlider v-if="project.images" :images="project.images" />
+      <img v-else :src="'images/' + project.image" />
     </div>
     <h3 class="project-title__name">
       <a :href="project.externalLink" v-if="project.externalLink">{{
@@ -26,7 +27,12 @@
 </template>
 
 <script>
+import ImageSlider from "../ImageSlider/index";
+
 export default {
+  components: {
+    ImageSlider
+  },
   props: {
     project: Object
   },

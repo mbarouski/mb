@@ -21,10 +21,24 @@ export default {
   data: () => ({
     projects: [
       {
+        name: "Distance Learning",
+        internalLink: null,
+        externalLink: "https://github.com/maximka777/distance-learning",
+        images: [
+          "distance-learning/dls.png",
+          "distance-learning/dls_settings.png",
+          "distance-learning/dlc.png",
+          "distance-learning/dlc_settings.png"
+        ],
+        description:
+          "Client-server application which allows to transfer audio and drawings from server to clients and messages among all participants.",
+        labels: ["java", "javafx", "udp", "tcp", "2016"]
+      },
+      {
         name: "PhoenixPay",
         internalLink: null,
         externalLink: null,
-        image: "phoenixpay.jpeg",
+        images: ["phoenixpay.jpeg"],
         description: "Play Market for everything",
         labels: ["software engineer", "2016"]
       },
@@ -32,7 +46,7 @@ export default {
         name: "R-409 Virtual tour",
         internalLink: null,
         externalLink: null,
-        image: "r409.jpg",
+        images: ["r409.jpg"],
         description: "Unity game for learning R-409",
         labels: ["3d-modeller", "animation designer", "c#", "2016-2017"]
       },
@@ -40,7 +54,7 @@ export default {
         name: "Family calendar",
         internalLink: null,
         externalLink: null,
-        image: "family-calendar.jpeg",
+        images: ["family-calendar.jpeg"],
         description:
           "Android application on Ionic + Angular with backend on Node.js",
         labels: ["backend", "node.js", "2019"]
@@ -49,7 +63,7 @@ export default {
         name: "Trailer",
         internalLink: "/trailer",
         externalLink: null,
-        image: "trailer.jpg",
+        images: ["trailer.jpg"],
         description: 'Welding "hello world" project',
         labels: ["welder", "designer", "painter", "2019"]
       },
@@ -57,7 +71,7 @@ export default {
         name: "Skaz",
         internalLink: null,
         externalLink: null,
-        image: "skaz.png",
+        images: ["skaz.png"],
         description: "Website for selling books",
         labels: ["angular", "frontend", "2019"]
       }

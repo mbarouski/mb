@@ -1,0 +1,81 @@
+.image-slider {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  .image-slider__privew-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color-black, 0.8);
+    z-index: 1;
+  }
+
+  .image-slider__image {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: contain;
+
+    &.image-slider__image--preview {
+      position: fixed;
+      width: 80vw;
+      height: 80vh;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  .image-slider__navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0.5rem;
+    margin: auto;
+    background: white;
+    padding: 0.25rem;
+    display: flex;
+    border-radius: 1rem;
+    width: fit-content;
+    opacity: 0.5;
+    transition: 0.2s opacity ease-in-out, 0.2s box-shadow ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0px 1px 8px 0px #b3b3b3;
+    }
+
+    .image-slider__navigation__thumbnail {
+      $thumbnail-size: 1.5rem;
+      width: $thumbnail-size;
+      min-width: $thumbnail-size;
+      max-width: $thumbnail-size;
+      height: $thumbnail-size;
+      min-height: $thumbnail-size;
+      max-height: $thumbnail-size;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid $color-white;
+
+      &:hover,
+      &.image-slider__navigation__thumbnail--active {
+        border: 1px solid $color-purple;
+      }
+
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
