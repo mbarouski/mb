@@ -52,7 +52,30 @@ export default {
     },
     handleImageClick() {
       this.isPreviewActive = !this.isPreviewActive;
+    },
+    handleKeyUp(event) {
+      if (this.isPreviewActive) {
+        switch (event.key) {
+          case "ArrowRight":
+            this.activeImageIndex =
+              (this.activeImageIndex + 1) % this.images.length;
+            break;
+          case "ArrowLeft":
+            this.activeImageIndex =
+              this.activeImageIndex - 1 < 0
+                ? this.images.length - 1
+                : this.activeImageIndex - 1;
+            break;
+        }
+      }
     }
+  },
+  created() {
+    this.keyUpEventListener = e => this.handleKeyUp(e);
+    window.addEventListener("keyup", this.keyUpEventListener);
+  },
+  beforeDestroy() {
+    window.removeEventListener("keyup", this.keyUpEventListener);
   }
 };
 </script>

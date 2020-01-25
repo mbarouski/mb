@@ -43,6 +43,20 @@ export default {
         labels: ["software engineer", "2016"]
       },
       {
+        name: "Totalizator",
+        internalLink: null,
+        externalLink: "https://github.com/maximka777/Java.EE.Totalizator",
+        images: [
+          "totalizator/1.png",
+          "totalizator/2.png",
+          "totalizator/3.png",
+          "totalizator/4.png"
+        ],
+        description:
+          "It is a final project for EPAM Java course and is accepted well. Web-application on Java EE for making bets on sport events.",
+        labels: ["java", "jsp", "servlet", "jdbc", "mysql", "2016"]
+      },
+      {
         name: "R-409 Virtual tour",
         internalLink: null,
         externalLink: null,
