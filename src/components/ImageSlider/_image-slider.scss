@@ -38,10 +38,6 @@
   }
 
   .image-slider__navigation {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0.5rem;
     margin: auto;
     background: $color-white;
     padding: 0.25rem;
@@ -69,7 +65,7 @@
 
       &:hover,
       &.image-slider__navigation__thumbnail--active {
-        border: 1px solid $color-purple;
+        border: 1.5px solid $color-purple;
       }
 
       &:not(:last-child) {
