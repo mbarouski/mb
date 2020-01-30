@@ -26,9 +26,7 @@ export default {
         externalLink: "https://github.com/maximka777/distance-learning",
         images: [
           "distance-learning/dls.png",
-          "distance-learning/dls_settings.png",
-          "distance-learning/dlc.png",
-          "distance-learning/dlc_settings.png"
+          "distance-learning/dlc.png"
         ],
         description:
           "Client-server application which allows to transfer audio and drawings from server to clients and messages among all participants.",
