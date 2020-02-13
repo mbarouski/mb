@@ -42,10 +42,10 @@ export default {
         internalLink: null,
         externalLink: "https://github.com/maximka777/Java.EE.Totalizator",
         images: [
-          "totalizator/1.png",
-          "totalizator/2.png",
-          "totalizator/3.png",
-          "totalizator/4.png"
+          "totalizator/1-min.png",
+          "totalizator/2-min.png",
+          "totalizator/3-min.png",
+          "totalizator/4-min.png"
         ],
         description:
           "It is a final project for EPAM Java course and is accepted well. Web-application on Java EE for making bets on sport events.",

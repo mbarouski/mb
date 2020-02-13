@@ -2,7 +2,7 @@
   <div class="project-item">
     <div class="project-item__image-container">
       <ImageSlider v-if="project.images" :images="project.images" />
-      <img v-else :src="'images/' + project.image" />
+      <img v-else :src="'images/' + project.image" loading="lazy" />
     </div>
     <h3 class="project-title__name">
       <a :href="project.externalLink" v-if="project.externalLink">{{

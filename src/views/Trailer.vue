@@ -28,7 +28,7 @@
               <img
                 :class="{ rotate90: slide.rotate90 }"
                 :src="'images/trailer/' + slide.image"
-                lazy
+                :loading="i < 3 ? 'eager' : 'lazy'"
               />
             </div>
           </div>
@@ -48,56 +48,56 @@ export default {
   data: () => ({
     slides: [
       {
-        image: "1.JPG",
+        image: "1-min.jpg",
         description: "Getting old Ford Escort back bridge"
       },
       {
-        image: "2.JPG",
+        image: "2-min.jpg",
         description: "Before assembling chassis"
       },
       {
-        image: "3.JPG",
+        image: "3-min.jpg",
         description: "Assembled chassis"
       },
       {
-        image: "4.JPG",
+        image: "4-min.jpg",
         description: "Chassis with wheels and jambs"
       },
       {
-        image: "5.JPG",
+        image: "5-min.jpg",
         description: "Constructed box"
       },
       {
-        image: "6.JPG",
+        image: "6-min.jpg",
         description: "Box on chassis"
       },
       {
-        image: "7.JPG",
+        image: "7-min.jpg",
         description: "Fixed box on chassis"
       },
       {
-        image: "8.JPG",
+        image: "8-min.jpg",
         description: "Floor for legs",
         rotate90: true
       },
       {
-        image: "9.JPG",
+        image: "9-min.jpg",
         description: "Back door XD"
       },
       {
-        image: "10.JPG",
+        image: "10-min.jpg",
         description: "Almost..."
       },
       {
-        image: "11.JPG",
+        image: "11-min.jpg",
         description: "Stop pedal"
       },
       {
-        image: "12.JPG",
+        image: "12-min.jpg",
         description: "Painted"
       },
       {
-        image: "13.JPG",
+        image: "13-min.jpg",
         description: "Painted (back view)",
         rotate90: true
       }

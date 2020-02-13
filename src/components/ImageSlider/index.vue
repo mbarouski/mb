@@ -21,6 +21,7 @@
           'image-slider__navigation__thumbnail--active':
             index === activeImageIndex
         }"
+        loading="lazy"
         :src="'images/' + image"
         @click="handleImageThumbnailClick(index)"
       />
