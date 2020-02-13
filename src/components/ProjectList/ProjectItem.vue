@@ -66,7 +66,7 @@ export default {
 
   .project-title__name {
     color: $color-almost-black;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     padding: 0 0.5rem;
 
     a {

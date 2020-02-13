@@ -56,9 +56,26 @@ export default {
         externalLink: "https://hearhear.app",
         image: "hh.svg",
         description: "Ask anybody, anything. Together, we will get an answer.",
-        labels: ["Java", "Vue", "DevOps", "Cassandra", "2019"]
+        labels: ["Java", "Vue", "DevOps", "Cassandra", "2019-now"]
+      },
+      {
+        name: "Project in development",
+        internalLink: null,
+        externalLink: null,
+        image: "rocket.svg",
+        description: "Description is totally secret.",
+        labels: [
+          "Java/Kotlin",
+          "Vue",
+          "Go",
+          "DevOps",
+          "Cassandra",
+          "Elastic",
+          "Postgres",
+          "2019-now"
+        ]
       }
-    ]
+    ].reverse()
   })
 };
 </script>

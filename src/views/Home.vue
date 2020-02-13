@@ -117,6 +117,19 @@
     <p style="text-align: center; margin: 1rem 0;">
       Maybe I'm coding now... 👨‍💻
     </p>
+
+    <p style="text-align: center; margin: 1rem 0;">
+      Passing
+      <a
+        class="link"
+        href="https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie"
+        >Introduction to ML</a
+      >
+      course... 👨‍🔬
+      <br />
+      Almost done, submitted a final task on
+      <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
+    </p>
   </div>
 </template>
 
@@ -214,6 +227,15 @@ export default {
             text-decoration: underline;
           }
         }
+      }
+    }
+  }
+
+  p {
+    a.link {
+      &:hover {
+        color: $color-yellow;
+        text-decoration: underline;
       }
     }
   }

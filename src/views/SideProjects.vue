@@ -24,10 +24,7 @@ export default {
         name: "Distance Learning",
         internalLink: null,
         externalLink: "https://github.com/maximka777/distance-learning",
-        images: [
-          "distance-learning/dls.png",
-          "distance-learning/dlc.png"
-        ],
+        images: ["distance-learning/dls.png", "distance-learning/dlc.png"],
         description:
           "Client-server application which allows to transfer audio and drawings from server to clients and messages among all participants.",
         labels: ["java", "javafx", "udp", "tcp", "2016"]
@@ -86,8 +83,16 @@ export default {
         images: ["skaz.png"],
         description: "Website for selling books",
         labels: ["angular", "frontend", "2019"]
+      },
+      {
+        name: "Project connected with ecology",
+        internalLink: null,
+        externalLink: null,
+        images: ["plastic.svg"],
+        description: "Should be open soon.",
+        labels: ["Unity", "management/planning", "2019-now"]
       }
-    ]
+    ].reverse()
   }),
   mounted() {
     if (this.$ga) {
