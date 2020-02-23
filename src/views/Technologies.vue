@@ -41,7 +41,7 @@
             <b-progress
               type="is-warning"
               size="small"
-              :value="55"
+              :value="70"
               :show-value="false"
             />
           </div>
@@ -165,7 +165,7 @@
         </div>
         <div class="columns">
           <div class="column">
-            <h3>Redis, Hazelcast, Elastic, PostgreSQL, ...</h3>
+            <h3>Redis, Hazelcast, Elastic, PostgreSQL, SQLite...</h3>
           </div>
         </div>
 

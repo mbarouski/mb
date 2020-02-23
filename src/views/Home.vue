@@ -119,7 +119,7 @@
     </p>
 
     <p style="text-align: center; margin: 1rem 0;">
-      Passing
+      Passed
       <a
         class="link"
         href="https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie"
@@ -127,7 +127,7 @@
       >
       course... 👨‍🔬
       <br />
-      Almost done, submitted a final task on
+      Submitted the final task on
       <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
     </p>
   </div>
