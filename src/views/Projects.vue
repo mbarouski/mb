@@ -51,6 +51,14 @@ export default {
         labels: ["Java", "Angular", "DevOps", "Neo", "Cassandra", "2018-now"]
       },
       {
+        name: "Consul LB GCE",
+        externalLink: "https://github.com/dffrntmedia/consul-lb-gce",
+        image: "consul-lb-gce.jpeg",
+        description:
+          "The app configures GCE load balancer based on Consul information about registered services.",
+        labels: ["GCE Load Balancer", "Consul", "Go"]
+      },
+      {
         name: "HearHear",
         internalLink: null,
         externalLink: "https://hearhear.app",

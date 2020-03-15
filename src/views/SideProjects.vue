@@ -85,12 +85,12 @@ export default {
         labels: ["angular", "frontend", "2019"]
       },
       {
-        name: "Project connected with ecology",
+        name: "EcoTrash",
         internalLink: null,
         externalLink: null,
-        images: ["plastic.svg"],
+        images: ["ecotrash.jpg"],
         description: "Should be open soon.",
-        labels: ["Unity", "management/planning", "2019-now"]
+        labels: ["Unity", "management/planning", "Go", "MySQL", "2019-now"]
       }
     ].reverse()
   }),
