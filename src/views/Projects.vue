@@ -53,7 +53,7 @@ export default {
       {
         name: "Consul LB GCE",
         externalLink: "https://github.com/dffrntmedia/consul-lb-gce",
-        image: "consul-lb-gce.jpeg",
+        image: "consul-lb-gce.jpg",
         description:
           "The app configures GCE load balancer based on Consul information about registered services.",
         labels: ["GCE Load Balancer", "Consul", "Go"]
