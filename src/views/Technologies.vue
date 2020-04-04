@@ -49,8 +49,10 @@
         <div class="columns">
           <div class="column">
             <h3>
-              Node.js, TypeScript, Kotlin, bash, VHDL, R, C, C++, Assembler,
-              Swift, C#, ...
+              <i>Production:</i> Node.js, TypeScript, Kotlin, bash, Swift, ...
+            </h3>
+            <h3>
+              <i>University/Home:</i> C, C#, Assembler, Delphi, C++, VHDL, ...
             </h3>
           </div>
         </div>
@@ -165,7 +167,7 @@
         </div>
         <div class="columns">
           <div class="column">
-            <h3>Redis, Hazelcast, Elastic, PostgreSQL, SQLite...</h3>
+            <h3>Elastic, PostgreSQL, Redis, Hazelcast, SQLite...</h3>
           </div>
         </div>
 
@@ -190,7 +192,8 @@
               Linux, Git, MacOS, iOS, Android, Blender, Unity, Twilio, SSR,
               FPGA, Arduino, 3d-modelling, JWT, Cypress, Gatling, Jetty, Apache,
               Nginx, OpenLDAP, OpenIDConnect, Stripe, GDPR, Google Analytics,
-              GrpahQL, Webpack, Avro, CircleCI, CSS, SCSS, ...
+              GrpahQL, Webpack, Avro, CircleCI, CSS, SCSS, make, R, Prolog,
+              Haskell, Lisp, ...
             </h3>
           </div>
         </div>
