@@ -87,7 +87,7 @@ export default {
         description: "Stop pedal"
       },
       {
-        image: "12-min.jpg",
+        image: "12.JPG",
         description: "Painted"
       },
       {
@@ -111,8 +111,8 @@ export default {
 
       .slide-content {
         .slide__image-container {
-          width: 50vw;
-          height: 50vw;
+          width: 50vmin;
+          height: 50vmin;
           min-width: 20rem;
           min-height: 20rem;
           background-color: #eee;
@@ -122,7 +122,7 @@ export default {
           img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
 
             &.rotate90 {
               transform: rotateZ(90deg) scale(0.75);
