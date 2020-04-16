@@ -11,25 +11,20 @@
                 href="https://www.instagram.com/p/B1UZAPSjLSC"
                 target="_blank"
                 style="display: block;"
-                >0. Trailer in action (instagram link)</a
+                >0. Trailer in action (Instagram)</a
               >
-              <video controls>
-                <source
-                  src="https://scontent-frx5-1.cdninstagram.com/v/t50.2886-16/69422804_2515295442037175_1210894936221618248_n.mp4?_nc_ht=scontent-frx5-1.cdninstagram.com&_nc_cat=111&_nc_ohc=jy-1IwTsU2cAX-9gDeb&oe=5E130DCA&oh=f907e80b3e13a306d48a31da17458495"
-                  type="video/mp4"
-                />
-                Your browser does not support HTML5 video.
-              </video>
             </div>
           </div>
           <div v-for="(slide, i) in slides" :key="slide.image" class="slide">
             <div class="slide-content">
               <p>{{ i + 1 + ". " + slide.description }}</p>
-              <img
-                :class="{ rotate90: slide.rotate90 }"
-                :src="'images/trailer/' + slide.image"
-                :loading="i < 3 ? 'eager' : 'lazy'"
-              />
+              <div class="slide__image-container">
+                <img
+                  :class="{ rotate90: slide.rotate90 }"
+                  :src="'images/trailer/' + slide.image"
+                  :loading="i < 3 ? 'eager' : 'lazy'"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -77,8 +72,7 @@ export default {
       },
       {
         image: "8-min.jpg",
-        description: "Floor for legs",
-        rotate90: true
+        description: "Floor for legs"
       },
       {
         image: "9-min.jpg",
@@ -98,8 +92,7 @@ export default {
       },
       {
         image: "13-min.jpg",
-        description: "Painted (back view)",
-        rotate90: true
+        description: "Painted (back view)"
       }
     ]
   })
@@ -117,13 +110,23 @@ export default {
       margin-bottom: 1rem;
 
       .slide-content {
-        img {
-          border-radius: 0.25rem;
-          object-fit: cover;
-          max-height: 50vh;
+        .slide__image-container {
+          width: 50vw;
+          height: 50vw;
+          min-width: 20rem;
+          min-height: 20rem;
+          background-color: #eee;
+          border-radius: 0.5rem;
+          overflow: hidden;
 
-          &.rotate90 {
-            transform: rotateZ(90deg) scale(0.75);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+            &.rotate90 {
+              transform: rotateZ(90deg) scale(0.75);
+            }
           }
         }
       }
