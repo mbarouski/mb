@@ -10,12 +10,13 @@ roles:
 links:
   - url: 'https://www.linkedin.com/in/maksim-barouski/'
     icon: 'linkedin'
+    rotatable: true
   - url: 'https://github.com/maximka777'
     icon: 'github'
-  - url: 'https://t.me/mbarouski'
-    icon: 'telegram'
   - url: 'mailto:maksim.borovskij@yandex.ru'
     icon: 'mail'
+  - url: 'https://t.me/mbarouski'
+    icon: 'telegram'
   - url: 'https://www.instagram.com/maximka_anatolevich'
     icon: 'instagram'
   - url: 'https://twitter.com/MBorovskij'
@@ -29,13 +30,13 @@ links:
 
 pages:
   - url: 'https://maksim-barouski.surge.sh/projects'
-    name: 'Projects I am/was working on'
+    name: 'Projects'
   - url: 'https://maksim-barouski.surge.sh/technologies'
-    name: 'Technologies I touched to'
-  - url: 'https://maksim-barouski.surge.sh/side-projects'
-    name: 'Side projects'
+    name: 'Technologies'
+#  - url: 'https://maksim-barouski.surge.sh/side-projects'
+#    name: 'Side projects'
   - url: 'https://maksim-barouski.surge.sh/my-articles'
-    name: 'My articles'
+    name: 'Writing'
 ---
 
 <!doctype html>
@@ -61,7 +62,11 @@ pages:
 
             <ul class="link-list">
               {% for link in page.links %}
-              <li class="link-item">
+                {% if link.rotatable %}
+                  <li class="link-item link-item--rotatable">
+                {% else %}
+                  <li class="link-item">
+                {% endif %}
                 <a href="{{ link.url }}">
                   <svg>
                     <use xlink:href="assets/icons.svg#{{link.icon}}" />
@@ -72,13 +77,6 @@ pages:
             </ul>
           </div>
         </div>
-        <div>
-          <p class="status">
-            Feel free to ask me anything in
-            <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
-          </p>
-        </div>
-        <hr>
         <div class="page-list-wrapper">
           <ul class="page-list">
             {% for p in page.pages %}
@@ -87,25 +85,6 @@ pages:
               </li>
             {% endfor %}
           </ul>
-        </div>
-        <hr>
-        <div>
-          <p class="status">
-            Maybe I'm coding now... 👨‍💻
-          </p>
-      
-          <p class="status">
-            Passed
-            <a
-              class="link"
-              href="https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie"
-              >Introduction to ML</a
-            >
-            course... 👨‍🔬
-            <br />
-            Submitted the final task on
-            <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
-          </p>
         </div>
       </div>
     </div>
