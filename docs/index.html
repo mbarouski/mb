@@ -1,77 +1,109 @@
+<!doctype html>
 <html>
-    <head>
-        <title>Lebedeva Anastasiya</title>
-        <style>
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+  <head>
+    <meta charset="utf-8">
+    <title>Maksim Barouski</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="page page--index">
+      <div class="page-content">
+        <div class="top">
+          <div class="top-content">
+            <img class="photo rounded" src="assets/images/me.jpg">
+            <h1 class="fullname">Maksim Barouski</h1>
 
-            .collage {
-                display: inline-grid;
-                border-radius: 2rem;
-                overflow: hidden;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto;
-            }
+            <ul class="role-list">
+              
+                <li class="role-item">Software engineer at <a href="https://senior-node.com">Senior Node</a></li>
+              
+                <li class="role-item">Master course student at <a href="https://bsuir.by">BSUIR</a></li>
+              
+            </ul>
 
-            .collage__item {
-                width: 20rem;
-                height: 20em;
-                position: relative;
-                cursor: pointer;
-                overflow: hidden;
-            }
-
-            .collage__item img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: 0.2s transform ease-in-out;
-            }
-
-            .collage__item h1 {
-                position: absolute;
-                bottom: 1rem;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-                color: white;
-                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-                text-align: center;
-                font-family: 'Londrina Outline', cursive;
-                transition: 0.2s color ease-in-out;
-            }
-
-            .collage__item:hover h1 {
-                color: orange;
-            }
-
-            .collage__item:hover img {
-                transform: scale(1.03125);
-            }
-        </style>
-        <link href="https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="collage">
-            <a href="https://www.linkedin.com/in/anastasiya-lebedeva-9b379a161/" class="collage__item">
-                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGdOZuqturRww/profile-displayphoto-shrink_800_800/0?e=1585785600&v=beta&t=FiKPXZZM_2PwBk5fgObsIk5AcdVGvEzl2G-_Gy_8iK0">
-                <h1>LinkedIn</h1>
-            </a>
-            <a href="https://t.me/leb3deva_anastasia" class="collage__item">
-                <img src="https://pbs.twimg.com/profile_images/1066390087632650240/e5UTyPsz_400x400.jpg">
-                <h1>Telegram</h1>
-            </a>
-            <a href="https://www.instagram.com/anastasia.leb3deva/" class="collage__item">
-                <img src="https://sun9-16.userapi.com/c840529/v840529622/25350/m_kuYIVTc0Y.jpg">
-                <h1>Instagram</h1>
-            </a>
-            <a href="https://www.facebook.com/anastasiya.lebedeva.940" class="collage__item">
-                <img src="https://sun9-35.userapi.com/mIhZ4jyBrRUXdqhcx3_sBl6hT_7-pXktaJdKXA/qqKZ1RGmfIc.jpg">
-                <h1>Facebook</h1>
-            </a>
+            <ul class="link-list">
+              
+                
+                  <li class="link-item link-item--rotatable">
+                
+                <a href="https://www.linkedin.com/in/maksim-barouski/">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+              
+                
+                  <li class="link-item">
+                
+                <a href="https://github.com/maximka777">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#github" />
+                  </svg>
+                </a>
+              </li>
+              
+                
+                  <li class="link-item">
+                
+                <a href="mailto:maksim.borovskij@yandex.ru">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#mail" />
+                  </svg>
+                </a>
+              </li>
+              
+                
+                  <li class="link-item">
+                
+                <a href="https://t.me/mbarouski">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#telegram" />
+                  </svg>
+                </a>
+              </li>
+              
+                
+                  <li class="link-item">
+                
+                <a href="https://www.instagram.com/maximka_anatolevich">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+              
+                
+                  <li class="link-item">
+                
+                <a href="https://twitter.com/MBorovskij">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
         </div>
-    </body>
+        <div class="page-list-wrapper">
+          <ul class="page-list">
+            
+              <li class="page-item">
+                <a href="https://maksim-barouski.surge.sh/projects">Projects</a>
+              </li>
+            
+              <li class="page-item">
+                <a href="https://maksim-barouski.surge.sh/technologies">Technologies</a>
+              </li>
+            
+              <li class="page-item">
+                <a href="https://maksim-barouski.surge.sh/my-articles">Writing</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

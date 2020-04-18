@@ -1,0 +1,71 @@
+ul { list-style: none; }
+
+* { box-sizing: border-box; }
+
+* { font-family: monospace; }
+
+body { margin: 0; }
+
+html { font-size: 16px; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+ul { padding: 0; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.75rem; }
+
+h3 { font-size: 1.5rem; }
+
+html { font-size: 24px; }
+
+.page.page--index .page-content { display: flex; flex-direction: column; min-height: 100vh; }
+
+.page.page--index .page-content .top { background-color: #7957d5; padding: 1.5rem; display: flex; justify-content: center; align-items: center; flex: 1; }
+
+.page.page--index .page-content .top .top-content { border-left: 2px solid #ffdd57; width: fit-content; height: fit-content; padding: 0 1rem; display: flex; flex-direction: column; align-items: flex-start; }
+
+.page.page--index .page-content .top .top-content .photo { border-radius: 50%; overflow: hidden; width: 16rem; height: 16rem; cursor: url("../assets/rock.png"), auto; }
+
+.page.page--index .page-content .top .top-content .fullname { color: #fff; margin: 0.5rem 0; cursor: url("../assets/rock.png"), auto; }
+
+.page.page--index .page-content .top .top-content .role-list { margin: 0; }
+
+.page.page--index .page-content .top .top-content .role-list .role-item { color: #fff; font-size: 1rem; }
+
+.page.page--index .page-content .top .top-content .role-list .role-item a { color: #ffdd57; font-size: inherit; }
+
+.page.page--index .page-content .top .top-content .link-list { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
+
+.page.page--index .page-content .top .top-content .link-list .link-item { width: 2rem; height: 2rem; margin: 0.25rem; }
+
+.page.page--index .page-content .top .top-content .link-list .link-item.link-item--rotatable { transition: 0.25s transform ease-in-out; }
+
+.page.page--index .page-content .top .top-content .link-list .link-item.link-item--rotatable:hover { transform: rotateZ(-20deg) scale(1.1); }
+
+.page.page--index .page-content .top .top-content .link-list .link-item a { width: 100%; height: 100%; }
+
+.page.page--index .page-content .top .top-content .link-list .link-item a svg { width: 100%; height: 100%; fill: #fff; }
+
+.page.page--index .page-content .top .top-content .link-list .link-item:hover a svg { fill: #ffdd57; }
+
+.page.page--index .page-content .page-list-wrapper { display: flex; justify-content: center; background-color: #ffdd57; }
+
+.page.page--index .page-content .page-list-wrapper .page-list { display: flex; margin: 0; }
+
+.page.page--index .page-content .page-list-wrapper .page-list .page-item { margin: 0.5rem; text-align: center; margin: 1rem; }
+
+.page.page--index .page-content .page-list-wrapper .page-list .page-item a:hover { color: #ffdd57; }
+
+.page.page--index .page-content hr { background-color: #7957d5; border: none; display: block; height: 2px; margin: 1rem 5rem; }
+
+.page.page--index .page-content .status { text-align: center; margin: 1rem 0; font-size: 1rem; color: #4a4a4a; }
+
+.page.page--index .page-content .status a { background-color: #7957d5; color: #ffdd57; font-size: inherit; padding: 0.125rem 0.25rem; transition: 0.05s transform ease-in-out; display: inline-block; }
+
+.page.page--index .page-content .status a:hover { transform: rotate(-5deg); }
+
+/*# sourceMappingURL=index.css.map */
