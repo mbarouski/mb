@@ -1,0 +1,113 @@
+---
+fullname: 'Maksim Barouski'
+roles:
+  - name: 'Software engineer'
+    place: 'Senior Node'
+    url: 'https://senior-node.com'
+  - name: 'Master course student'
+    place: 'BSUIR'
+    url: 'https://bsuir.by'
+links:
+  - url: 'https://www.linkedin.com/in/maksim-barouski/'
+    icon: 'linkedin'
+  - url: 'https://github.com/maximka777'
+    icon: 'github'
+  - url: 'https://t.me/mbarouski'
+    icon: 'telegram'
+  - url: 'mailto:maksim.borovskij@yandex.ru'
+    icon: 'mail'
+  - url: 'https://www.instagram.com/maximka_anatolevich'
+    icon: 'instagram'
+  - url: 'https://twitter.com/MBorovskij'
+    icon: 'twitter'
+    
+# TODO(max): Place these links in some other place
+#  - url: 'https://stackoverflow.com/users/6575674/maxim-anatolevich-borovsky'
+#    icon: 'stackoverflow'
+#  - url: 'https://www.producthunt.com/@mborovskij/made'
+#    icon: 'producthunt'
+
+pages:
+  - url: 'https://maksim-barouski.surge.sh/projects'
+    name: 'Projects I am/was working on'
+  - url: 'https://maksim-barouski.surge.sh/technologies'
+    name: 'Technologies I touched to'
+  - url: 'https://maksim-barouski.surge.sh/side-projects'
+    name: 'Side projects'
+  - url: 'https://maksim-barouski.surge.sh/my-articles'
+    name: 'My articles'
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.fullname }}</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="page page--index">
+      <div class="page-content">
+        <div class="top">
+          <div class="top-content">
+            <img class="photo rounded" src="assets/images/me.jpg">
+            <h1 class="fullname">{{ page.fullname }}</h1>
+
+            <ul class="role-list">
+              {% for role in page.roles %}
+                <li class="role-item">{{ role.name }} at <a href="{{ role.url }}">{{ role.place }}</a></li>
+              {% endfor %}
+            </ul>
+
+            <ul class="link-list">
+              {% for link in page.links %}
+              <li class="link-item">
+                <a href="{{ link.url }}">
+                  <svg>
+                    <use xlink:href="assets/icons.svg#{{link.icon}}" />
+                  </svg>
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="status">
+            Feel free to ask me anything in
+            <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
+          </p>
+        </div>
+        <hr>
+        <div class="page-list-wrapper">
+          <ul class="page-list">
+            {% for p in page.pages %}
+              <li class="page-item">
+                <a href="{{ p.url }}">{{ p.name }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <hr>
+        <div>
+          <p class="status">
+            Maybe I'm coding now... 👨‍💻
+          </p>
+      
+          <p class="status">
+            Passed
+            <a
+              class="link"
+              href="https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie"
+              >Introduction to ML</a
+            >
+            course... 👨‍🔬
+            <br />
+            Submitted the final task on
+            <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
