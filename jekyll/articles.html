@@ -1,0 +1,41 @@
+---
+title: 'Articles'
+fullname: 'Maksim Barouski'
+articles:
+  - title: 'Google Compute Engine load balancing with Consul'
+    date: '18 Mar 2020'
+    url: 'https://medium.com/@mbarouski/google-compute-engine-load-balancing-with-consul-da3ada21d010'
+  - title: 'Создание кастомного генератора запросов в Spring Data Neo4j (Часть 1)'
+    date: '31 Dec 2018'
+    url: 'https://habr.com/ru/post/434902/'
+  - title: 'Docker Compose + Consul + Spring Boot + FeignClient'
+    date: '11 Nov 2018'
+    url: 'https://habr.com/ru/post/429472/'
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.fullname }} | {{ page.title }}</title>
+    <link rel="stylesheet" href="styles/index.css">
+  </head>
+  <body>
+    <div class="page page--articles">
+      <div class="page-content">
+        <a>main</a>
+        <h1>{{ page.title }}</h1>
+        <hr>
+        <ul>
+          {% for article in page.articles %}
+            <li>
+              <p>
+              <span>{{ article.date }} - </span><a href="{{ article.url }}">{{ article.title }}</a>
+              </p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
