@@ -17,7 +17,7 @@
                 >
               </li>
               <li>
-                Not a <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a> master course student anymore                
+                Bachelor of Computer Science after <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a>             
               </li>
             </ul>
           </div>
@@ -85,10 +85,10 @@
       </div>
     </section>
 
-    <p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
+    <!--p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
       Ask me anything in
       <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
-    </p>
+    </p-->
 
     <hr class="hr" />
 
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <hr class="hr" />
+    <!--hr class="hr" />
 
     <p style="text-align: center; margin: 1rem 0;">
       Maybe I'm coding now... 👨‍💻
@@ -128,7 +128,7 @@
       <br />
       Submitted the final task on
       <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
-    </p>
+    </p-->
   </div>
 </template>
 
