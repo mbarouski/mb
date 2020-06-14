@@ -88,9 +88,9 @@
     <!--p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
       Ask me anything in
       <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
-    </p-->
+    </p>
 
-    <hr class="hr" />
+    <hr class="hr" /-->
 
     <section class="section mb-footer-section">
       <div class="container mb-footer">
@@ -111,13 +111,13 @@
       </div>
     </section>
 
-    <!--hr class="hr" />
+    <hr class="hr" />
 
     <p style="text-align: center; margin: 1rem 0;">
       Maybe I'm coding now... 👨‍💻
     </p>
 
-    <p style="text-align: center; margin: 1rem 0;">
+    <!--p style="text-align: center; margin: 1rem 0;">
       Passed
       <a
         class="link"
