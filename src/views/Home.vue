@@ -17,8 +17,7 @@
                 >
               </li>
               <li>
-                Master course student at
-                <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a>
+                Not a <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a> master course student anymore                
               </li>
             </ul>
           </div>
