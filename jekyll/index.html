@@ -1,7 +1,7 @@
 ---
 fullname: 'Maksim Barouski'
 roles:
-  - name: 'Software engineer'
+  - name: 'Software Engineer'
     place: 'Senior Node'
     url: 'https://senior-node.com'
   - name: 'Bachelor of Computer Science'
@@ -43,6 +43,7 @@ pages:
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.fullname }}</title>
     <link rel="stylesheet" href="styles/index.css">
   </head>
@@ -51,12 +52,14 @@ pages:
       <div class="page-content">
         <div class="top">
           <div class="top-content">
-            <img class="photo rounded" src="assets/images/me.jpg">
+            <div class="photo-container">
+              <img class="photo" src="assets/images/me.jpg">
+            </div>
             <h1 class="fullname">{{ page.fullname }}</h1>
 
             <ul class="role-list">
               {% for role in page.roles %}
-                <li class="role-item">{{ role.name }} at <a href="{{ role.url }}">{{ role.place }}</a></li>
+                <li class="role-item">{{ role.name }} [<a href="{{ role.url }}">{{ role.place }}</a>]</li>
               {% endfor %}
             </ul>
 

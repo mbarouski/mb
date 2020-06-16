@@ -90,12 +90,15 @@
       </div>
     </section>
 
-    <!--p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
-      Ask me anything in
-      <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>
+    <!-- <p class="ask-me-section" style="text-align: center; margin: 1rem 0;">
+      <span class="strikethrough">Ask me anything in <a href="https://hear.hr/fevvun" target="_blank">my HearHear room</a>.</span> <span>Sorry, HH goes through another development phase 🛠️ and it promises to be much better 🥳</span>
+    </p> -->
+
+    <p style="text-align: center; margin: 1rem 0;">
+      Welcome 🥳
     </p>
 
-    <hr class="hr" /-->
+    <hr class="hr" />
 
     <section class="section mb-footer-section">
       <div class="container mb-footer">
@@ -118,22 +121,45 @@
 
     <hr class="hr" />
 
-    <p style="text-align: center; margin: 1rem 0;">
+    <!-- <p style="text-align: center; margin: 1rem 0;">
       Maybe I'm coding now... 👨‍💻
     </p>
 
-    <!--p style="text-align: center; margin: 1rem 0;">
+    <p style="text-align: center; margin: 1rem 0;">
+      ...
+    </p> -->
+
+    <p class="status-date">20 Jan 2020</p>
+    <p class="status-content">
       Passed
       <a
         class="link"
         href="https://www.coursera.org/learn/vvedenie-mashinnoe-obuchenie"
         >Introduction to ML</a
       >
-      course... 👨‍🔬
+      course 👨‍🔬
       <br />
       Submitted the final task on
       <a class="link" href="https://www.kaggle.com/maksimbarouski">Kaggle</a> 💪
-    </p-->
+    </p>
+
+    <p style="text-align: center; margin: 1rem 0;">
+      ...
+    </p>
+
+    <p class="status-date">19 May 2020</p>
+    <p class="status-content">
+      Left magistracy after two years of wasted time 😅🎉
+    </p>
+
+    <p style="text-align: center; margin: 1rem 0;">
+      ...
+    </p>
+
+    <p class="status-date">16 Jun 2020</p>
+    <p class="status-content">
+      Moving the website to Jekyll thing... 👨‍💻
+    </p>
   </div>
 </template>
 
@@ -222,6 +248,18 @@ export default {
         text-decoration: underline;
       }
     }
+  }
+
+  .status-date {
+    text-align: center;
+    font-size: 0.75rem;
+    color: grey;
+    margin: 0;
+  }
+
+  .status-content {
+    text-align: center;
+    margin: 0.5rem 0 1rem 0px;
   }
 
   .mb-footer-section {
