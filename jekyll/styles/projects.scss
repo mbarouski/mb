@@ -1,0 +1,85 @@
+---
+---
+
+@import 'utils.scss';
+@import 'colors.scss';
+
+.page {
+  &.page--projects {
+    display: flex;
+    justify-content: center;
+    background: $color-lighter-grey;
+
+    .page-content {
+      padding: 3rem 1.5rem;
+      max-width: 1344px;
+
+      .projects-section {
+        .projects-container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-column-gap: 1rem;
+          grid-row-gap: 1rem;
+
+          @media only screen and (min-width: 320px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          @media only screen and (min-width: 640px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+
+          @media only screen and (min-width: 1280px) {
+            grid-template-columns: repeat(4, 1fr);
+          }
+
+          .project-item {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid $color-light-grey;
+            border-radius: 0.5rem;
+            background: $color-white;
+            overflow: hidden;
+            padding-bottom: 0.25rem;
+
+            .project-item__image-container {
+              margin: .5rem 0;
+              height: 6rem;
+              border: none;
+
+              .project-item__image {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            }
+
+            .project-item__title {
+              font-size: 1.125rem;
+              color: $color-almost-black;
+              margin-bottom: .25rem;
+              padding: 0 .5rem;
+            }
+
+            .project-item__description {
+              font-size: 0.875rem;
+              color: $color-darker-grey;
+              margin-bottom: .5rem;
+              padding: 0 .5rem;
+            }
+
+            .project-item__label {
+              border-radius: 0.5rem;
+              color: $color-purple;
+              background: $color-lighter-grey;
+              width: fit-content;
+              margin: 0.25rem -0.25rem 0 0.5rem;
+              padding: 0.25rem;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

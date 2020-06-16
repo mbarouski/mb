@@ -1,0 +1,128 @@
+---
+title: 'Projects'
+fullname: 'Maksim Barouski'
+groups:
+  - id: 'main'
+    name: 'Projects'
+  - id: 'side'
+    name: 'Side projects'
+projects:
+  - name: 'Project in development'
+    description: 'Description is totally secret.'
+    group: 'main'
+    images:
+      - 'assets/images/rocket.svg'
+    labels:
+      - 'Java/Kotlin'
+      - 'Vue'
+      - 'Go'
+      - 'DevOps'
+      - 'Postgres'
+      - 'Cassandra'
+      - 'Elastic'
+      - '2019-now'
+  - name: 'HearHear'
+    description: 'Ask anybody, anything. Together, we will get an answer.'
+    url: 'https://hearhear.app'
+    group: 'main'
+    images:
+      - 'assets/images/hh.svg'
+    labels:
+      - 'Java'
+      - 'Nuxt.js (Vue)'
+      - 'DevOps'
+      - 'Cassandra'
+      - '2019-now'
+  - name: 'Consul LB GCE'
+    description: 'The app configures GCE load balancer based on Consul information about registered services.'
+    url: 'https://github.com/dffrntmedia/consul-lb-gce'
+    group: 'main'
+    images:
+      - 'assets/images/consul-lb-gce.jpg'
+    labels:
+      - 'GCE Load Balancer'
+      - 'Consul'
+      - 'Go'
+  - name: 'EarthToday'
+    description: 'EarthToday is a community-driven content platform to inform, inspire, educate and entertain.'
+    url: 'https://earthtoday.com'
+    group: 'main'
+    images:
+      - 'assets/images/et.png'
+    labels:
+      - 'Java'
+      - 'Angular'
+      - 'DevOps'
+      - 'Neo4j'
+      - 'Cassandra'
+      - '2018-2020'
+  - name: 'Visual Server'
+    description: 'A Revolutionary Website Builder For Creatives. Designed Especially for Photographers and Artists.'
+    url: 'https://app.visualserver.com/'
+    group: 'main'
+    images:
+      - 'assets/images/vs.png'
+    labels:
+      - 'Node.js'
+      - 'Angular'
+      - 'JavaScript'
+      - 'MSSQL'
+      - '2017-2018'
+  - name: 'Ezispeak Video Interpreter'
+    description: 'Video communication between doctor and patient on one side and interpreter on another side.'
+    url: 'https://apps.apple.com/us/app/ezispeak-video-interpreter/id1256607378'
+    group: 'main'
+    images:
+      - 'assets/images/ezispeak.png'
+    labels:
+      - 'Node.js'
+      - 'React'
+      - 'Swift'
+      - 'MongoDB'
+      - '2017'
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.fullname }} | {{ page.title }}</title>
+    <link rel="stylesheet" href="styles/projects.css">
+  </head>
+  <body>
+    <div class="page page--projects">
+      <div class="page-content">
+        <a href="index.html" class="link">main</a>
+        <hr>
+        {% for group in page.groups %}
+          <div class="projects-section">
+            <h1 class="title">{{ group.name }}</h1>
+            <div class="projects-container">
+              {% for project in page.projects %}
+                {% if project.group == group.id %}
+                    <div class="project-item">
+                        <div class="project-item__images">
+                        {% for image in project.images %}
+                          <div class="project-item__image-container">
+                            <img class="project-item__image" src="{{ image }}">
+                          </div>
+                        {% endfor %}
+                        </div>
+                        <h3 class="project-item__title">{{ project.name }}</h3>
+                        <p class="project-item__description">{{ project.description }}</p>
+                        <div class="project-item__labels">
+                        {% for label in project.labels %}
+                            <div class="project-item__label">{{ label }}</div>
+                        {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

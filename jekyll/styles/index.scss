@@ -4,27 +4,15 @@
 @import 'utils.scss';
 @import 'colors.scss';
 
-hr {
-  background-color: $color-purple;
-  border: none;
-  display: block;
-  height: 2px;
-  margin: 1rem 0;
-}
+html {
+  font-size: 16px;
 
-.link {
-  color: $color-purple;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:hover {
-    color: $color-luxury-black;
-    text-decoration: none;
+  @media only screen and (min-width: $mobile-breakpoint) {
+    font-size: 24px;
   }
 }
 
 .page {
-
   &.page--index {
     .page-content {
       display: flex;
@@ -175,20 +163,6 @@ hr {
             flex-direction: row;
           }
         }
-      }
-    }
-  }
-
-  &.page--articles {
-    display: flex;
-    justify-content: center;
-
-    .page-content {
-      padding: 3rem 1.5rem;
-      max-width: 1344px;
-
-      .title {
-        margin-bottom: 0;
       }
     }
   }
