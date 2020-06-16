@@ -17,20 +17,21 @@ articles:
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.fullname }} | {{ page.title }}</title>
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
     <div class="page page--articles">
       <div class="page-content">
-        <a>main</a>
+        <a href="index.html" class="link">main</a>
         <h1>{{ page.title }}</h1>
         <hr>
         <ul>
           {% for article in page.articles %}
             <li>
               <p>
-              <span>{{ article.date }} - </span><a href="{{ article.url }}">{{ article.title }}</a>
+              <span>{{ article.date }} - </span><a href="{{ article.url }}" class="link">{{ article.title }}</a>
               </p>
             </li>
           {% endfor %}

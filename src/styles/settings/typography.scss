@@ -3,3 +3,7 @@ $font-family: monospace;
 h1, h2, h3, h4, h5, h6, p, span, a, li {
     font-family: $font-family !important;
 }
+
+.strikethrough {
+    text-decoration: line-through;
+}
