@@ -11,13 +11,18 @@
             <h1 class="title">Maksim Barouski</h1>
             <ul>
               <li>
-                Software engineer at
-                <a href="http://senior-node.com" style="color: #FFDD57;"
+                Software Engineer [<a
+                  href="http://senior-node.com"
+                  style="color: #FFDD57;"
                   >Senior Node</a
-                >
+                >]
               </li>
               <li>
-                Bachelor of Computer Science after <a href="https://bsuir.by" style="color: #FFDD57;">BSUIR</a>             
+                Bachelor of Computer Science [<a
+                  href="https://bsuir.by"
+                  style="color: #FFDD57;"
+                  >BSUIR</a
+                >]
               </li>
             </ul>
           </div>
@@ -137,7 +142,9 @@ export default {
   name: "home",
   components: {},
   mounted() {
-    this.$ga.page("/");
+    if (this.$ga) {
+      this.$ga.page("/");
+    }
   }
 };
 </script>
@@ -154,6 +161,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 19.5rem;
+    overflow: visible;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .short-info-container h1 {
@@ -164,6 +175,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .short-info-container ul li a:hover {
+    text-decoration: underline;
   }
 
   .hero-body {
