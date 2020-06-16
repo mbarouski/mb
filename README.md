@@ -22,9 +22,3 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-## TODO
-- add education info
-- add image viewer
-- `refactor`
