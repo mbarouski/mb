@@ -129,7 +129,7 @@
       ...
     </p> -->
 
-    <p class="status-date">20 Jan 2020</p>
+    <!-- <p class="status-date">20 Jan 2020</p>
     <p class="status-content">
       Passed
       <a
@@ -145,20 +145,21 @@
 
     <p style="text-align: center; margin: 1rem 0;">
       ...
-    </p>
+    </p> -->
 
-    <p class="status-date">19 May 2020</p>
+    <!-- <p class="status-date">19 May 2020</p>
     <p class="status-content">
       Left magistracy after two years of wasted time 😅🎉
     </p>
 
     <p style="text-align: center; margin: 1rem 0;">
       ...
-    </p>
+    </p> -->
 
     <p class="status-date">16 Jun 2020</p>
     <p class="status-content">
-      Moving the website to Jekyll thing... 👨‍💻
+      Moving the website to Jekyll thing... Look at it
+      <a class="link" href="https://maximka777.github.io/mb">here</a> 👨‍💻
     </p>
   </div>
 </template>

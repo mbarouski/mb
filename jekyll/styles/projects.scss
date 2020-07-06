@@ -43,8 +43,7 @@
             padding-bottom: 0.25rem;
 
             .project-item__image-container {
-              margin: .5rem 0;
-              height: 6rem;
+              height: 20rem;
               border: none;
 
               .project-item__image {
@@ -57,8 +56,7 @@
             .project-item__title {
               font-size: 1.125rem;
               color: $color-almost-black;
-              margin-bottom: .25rem;
-              padding: 0 .5rem;
+              margin: 0.5rem;
             }
 
             .project-item__description {
@@ -68,14 +66,22 @@
               padding: 0 .5rem;
             }
 
-            .project-item__label {
-              border-radius: 0.5rem;
-              color: $color-purple;
-              background: $color-lighter-grey;
-              width: fit-content;
-              margin: 0.25rem -0.25rem 0 0.5rem;
-              padding: 0.25rem;
-              display: inline-block;
+            .project-item__labels {
+              padding: 0.5rem;
+
+              .project-item__label {
+                border-radius: 0.25rem;
+                color: $color-purple;
+                background: $color-lighter-grey;
+                width: fit-content;
+                display: inline-block;
+                transition: 50ms background-color ease-in-out;
+                cursor: pointer;
+                font-size: 0.875rem;
+                line-height: 1rem;
+                padding: 0.25rem;
+                margin: 0.125rem;
+              }
             }
           }
         }
