@@ -1,0 +1,22 @@
+---
+---
+
+@import 'utils.scss';
+@import 'colors.scss';
+
+.page {
+  &.page--articles {
+    display: flex;
+    justify-content: center;
+    background: $color-lighter-grey;
+
+    .page-content {
+      padding: 3rem 1.5rem;
+      max-width: 1344px;
+
+      .title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
