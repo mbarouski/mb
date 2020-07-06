@@ -1,0 +1,51 @@
+ul { list-style: none; }
+
+* { font-family: monospace; }
+
+body { margin: 0; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+ul { padding: 0; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.75rem; }
+
+h3 { font-size: 1.5rem; }
+
+hr { background-color: #7957d5; border: none; display: block; height: 2px; margin: 1rem 0; }
+
+.link { color: #7957d5; text-decoration: none; cursor: pointer; }
+
+.link:hover { color: #363636; text-decoration: none; }
+
+.page.page--projects { display: flex; justify-content: center; background: #f5f5f5; }
+
+.page.page--projects .page-content { padding: 3rem 1.5rem; max-width: 1344px; }
+
+.page.page--projects .page-content .projects-section .projects-container { display: grid; grid-template-columns: repeat(1, 1fr); grid-column-gap: 1rem; grid-row-gap: 1rem; }
+
+@media only screen and (min-width: 320px) { .page.page--projects .page-content .projects-section .projects-container { grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (min-width: 640px) { .page.page--projects .page-content .projects-section .projects-container { grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 1280px) { .page.page--projects .page-content .projects-section .projects-container { grid-template-columns: repeat(4, 1fr); } }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item { display: inline-block; width: 100%; border: 1px solid #ccc; border-radius: 0.5rem; background: #fff; overflow: hidden; padding-bottom: 0.25rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__image-container { height: 20rem; border: none; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__image-container .project-item__image { width: 100%; height: 100%; object-fit: contain; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__title { font-size: 1.125rem; color: #1a1a1a; margin: 0.5rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__description { font-size: 0.875rem; color: #474747; margin-bottom: .5rem; padding: 0 .5rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__labels { padding: 0.5rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__labels .project-item__label { border-radius: 0.25rem; color: #7957d5; background: #f5f5f5; width: fit-content; display: inline-block; transition: 50ms background-color ease-in-out; cursor: pointer; font-size: 0.875rem; line-height: 1rem; padding: 0.25rem; margin: 0.125rem; }
+
+/*# sourceMappingURL=projects.css.map */

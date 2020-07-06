@@ -1,0 +1,31 @@
+ul { list-style: none; }
+
+* { font-family: monospace; }
+
+body { margin: 0; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+ul { padding: 0; }
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.75rem; }
+
+h3 { font-size: 1.5rem; }
+
+hr { background-color: #7957d5; border: none; display: block; height: 2px; margin: 1rem 0; }
+
+.link { color: #7957d5; text-decoration: none; cursor: pointer; }
+
+.link:hover { color: #363636; text-decoration: none; }
+
+.page.page--articles { display: flex; justify-content: center; background: #f5f5f5; }
+
+.page.page--articles .page-content { padding: 3rem 1.5rem; max-width: 1344px; }
+
+.page.page--articles .page-content .title { margin-bottom: 0; }
+
+/*# sourceMappingURL=articles.css.map */
