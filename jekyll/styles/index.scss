@@ -31,22 +31,34 @@ html {
           max-width: 100%;
           width: fit-content;
           height: fit-content;
-          padding: 0 1rem;
+          padding: 1rem;
+          border-radius: 0.5rem;
   
           display: flex;
           flex-direction: column;
           align-items: center;
 
           .photo-container {
-            width: 16rem;
-            height: 16rem;
+            $size: 12rem;
+            width: $size;
+            height: $size;
+
             @include rounded;
+
             cursor: url('../assets/rock.png'), auto;
-            overflow: hidden;
+
+            padding: 3px;
+            border: 5px solid $color-white;
+            transition: 150ms border-color ease-in-out;
+
+            &:hover {
+              border: 5px solid $color-yellow;
+            }
         
             .photo {
               width: 100%;
               height: 100%;
+              @include rounded;
             }
           }
     
@@ -77,6 +89,7 @@ html {
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 0.5rem;
+            margin-bottom: 0;
   
             .link-item {
               width: 2rem;
@@ -141,16 +154,7 @@ html {
       @media only screen and (min-width: $mobile-breakpoint) {
         .top {
           .top-content {
-            border-left: 2px solid $color-yellow;
-            align-items: flex-start;
-
-            .fullname {
-              text-align: left;
-            }
-    
             .role-list {
-              text-align: left;
-    
               .role-item {
                 white-space: nowrap;
               }
