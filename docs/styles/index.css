@@ -32,9 +32,21 @@ html { font-size: 16px; }
 
 .page.page--index .page-content .top .top-content { max-width: 100%; width: fit-content; height: fit-content; padding: 1rem; border-radius: 0.5rem; display: flex; flex-direction: column; align-items: center; }
 
-.page.page--index .page-content .top .top-content .photo-container { width: 12rem; height: 12rem; border-radius: 50%; overflow: hidden; cursor: url("../assets/rock.png"), auto; padding: 3px; border: 5px solid #fff; transition: 150ms border-color ease-in-out; }
+.page.page--index .page-content .top .top-content .photo-container { position: relative; z-index: 1; width: 12rem; height: 12rem; border-radius: 50%; cursor: url("../assets/rock.png"), auto; padding: 3px; border: 5px solid #fff; transition: 150ms border-color ease-in-out; }
 
 .page.page--index .page-content .top .top-content .photo-container:hover { border: 5px solid #ffdd57; }
+
+.page.page--index .page-content .top .top-content .photo-container:hover .photo-container__surprise-link.photo-container__surprise-link--bottom-left { transform: rotateZ(0) scale(1.5); }
+
+.page.page--index .page-content .top .top-content .photo-container:hover .photo-container__surprise-link.photo-container__surprise-link--top-right { transform: rotateZ(0deg) scale(1.5); }
+
+.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link { position: absolute; top: 0; width: 12rem; height: 12rem; display: flex; z-index: -1; }
+
+.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link.photo-container__surprise-link--bottom-left { transition: 250ms transform ease-in-out; left: -50%; transform: rotateZ(-90deg) scale(1.5); align-items: flex-end; justify-content: center; }
+
+.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link.photo-container__surprise-link--top-right { transition: 250ms transform ease-in-out; left: 50%; transform: rotateZ(-90deg) scale(1.5); align-items: flex-start; justify-content: center; }
+
+.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link > a { background: #ffdd57; padding: 0.25rem; }
 
 .page.page--index .page-content .top .top-content .photo-container .photo { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; }
 
