@@ -12,7 +12,7 @@
 
     .page-content {
       padding: 3rem 1.5rem;
-      max-width: 1344px;
+      max-width: 1080px;
 
       .projects-section {
         .projects-container {
@@ -34,53 +34,115 @@
           }
 
           .project-item {
-            display: inline-block;
-            width: 100%;
-            border: 1px solid $color-light-grey;
-            border-radius: 0.5rem;
-            background: $color-white;
-            overflow: hidden;
-            padding-bottom: 0.25rem;
+            position: relative;
+            display: flex;
 
-            .project-item__image-container {
-              height: 20rem;
-              border: none;
+            &:hover {
+              .project-item__face {
+                transform: rotateY(180deg) translateZ(-1px);
+              }
 
-              .project-item__image {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
+              .project-item__back {
+                transform: rotateY(0) translateZ(1px);
+                z-index: 1;
               }
             }
 
-            .project-item__title {
-              font-size: 1.125rem;
-              color: $color-almost-black;
-              margin: 0.5rem;
+            .project-item__face {
+              transform: translateZ(1px);
+
+              background-color: $color-white;
+              box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+              border-radius: 0.5rem;
+              padding: 1rem;
+  
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+  
+              transition: 250ms transform ease-in-out;
+  
+              .project-item__image-container {
+                width: 12rem;
+                height: 12rem;
+  
+                .project-item__image {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                }
+              }
+  
+              .project-item__title {
+                color: #363636;
+                margin: 1rem 0;
+                
+                font-family: Roboto, sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+              }
+  
+              .project-item__description {
+                color: #363636;
+                margin-bottom: .5rem;
+                padding: 0 .5rem;
+  
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+              }
             }
 
-            .project-item__description {
-              font-size: 0.875rem;
-              color: $color-darker-grey;
-              margin-bottom: .5rem;
-              padding: 0 .5rem;
-            }
+            .project-item__back {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
 
-            .project-item__labels {
-              padding: 0.5rem;
+              transform: rotateY(-180deg) translateZ(-1px);
+              z-index: -1;
 
-              .project-item__label {
-                border-radius: 0.25rem;
-                color: $color-purple;
-                background: $color-lighter-grey;
-                width: fit-content;
-                display: inline-block;
-                transition: 50ms background-color ease-in-out;
-                cursor: pointer;
-                font-size: 0.875rem;
-                line-height: 1rem;
-                padding: 0.25rem;
-                margin: 0.125rem;
+              background-color: $color-white;
+              border-radius: 0.5rem;
+              padding: 1rem;
+  
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+  
+              transition: 250ms transform ease-in-out,
+                          250ms z-index ease-in-out;
+
+              .project-item__labels {
+                padding: 0.5rem;
+  
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+  
+                .project-item__label {
+                  border-radius: 0.25rem;
+                  color: $color-purple;
+                  background: $color-lighter-grey;
+                  width: fit-content;
+                  display: inline-block;
+                  transition: 50ms background-color ease-in-out;
+                  cursor: pointer;
+                  font-size: 0.875rem;
+                  line-height: 1rem;
+                  padding: 0.25rem;
+                  margin: 0.125rem;
+                }
               }
             }
           }

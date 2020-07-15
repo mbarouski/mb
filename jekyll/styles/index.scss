@@ -39,11 +39,14 @@ html {
           align-items: center;
 
           .photo-container {
+            position: relative;
+            z-index: 1;
+
             $size: 12rem;
             width: $size;
             height: $size;
 
-            @include rounded;
+            border-radius: 50%;
 
             cursor: url('../assets/rock.png'), auto;
 
@@ -53,6 +56,46 @@ html {
 
             &:hover {
               border: 5px solid $color-yellow;
+
+              .photo-container__surprise-link {
+                &.photo-container__surprise-link--bottom-left {
+                  transform: rotateZ(0) scale(1.5);
+                }
+
+                &.photo-container__surprise-link--top-right {
+                  transform: rotateZ(0deg) scale(1.5);
+                }
+              }
+            }
+
+            .photo-container__surprise-link {
+              position: absolute;
+              top: 0;
+              width: $size;
+              height: $size;
+              display: flex;
+              z-index: -1;
+
+              &.photo-container__surprise-link--bottom-left {
+                transition: 250ms transform ease-in-out;
+                left: -50%;
+                transform: rotateZ(-90deg) scale(1.5);
+                align-items: flex-end;
+                justify-content: center;
+              }
+
+              &.photo-container__surprise-link--top-right {
+                transition: 250ms transform ease-in-out;
+                left: 50%;
+                transform: rotateZ(-90deg) scale(1.5);
+                align-items: flex-start;
+                justify-content: center;
+              }
+
+              > a {
+                background: $color-yellow;
+                padding: 0.25rem;
+              }
             }
         
             .photo {
