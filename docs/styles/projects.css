@@ -40,6 +40,12 @@ hr { background-color: #7957d5; border: none; display: block; height: 2px; margi
 
 .page.page--projects .page-content .projects-section .projects-container .project-item:hover .project-item__back { transform: rotateY(0) translateZ(1px); z-index: 1; }
 
+.page.page--projects .page-content .projects-section .projects-container .project-item.project-item--side .project-item__face { overflow: hidden; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item.project-item--side .project-item__face .project-item__images { margin: -1rem -1rem 0 -1rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item.project-item--side .project-item__face .project-item__images .project-item__image-container { width: 100%; min-width: 100%; height: unset; }
+
 .page.page--projects .page-content .projects-section .projects-container .project-item .project-item__face { transform: translateZ(1px); background-color: #fff; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 0.5rem; padding: 1rem; display: flex; flex-direction: column; align-items: center; width: 100%; transition: 250ms transform ease-in-out; }
 
 .page.page--projects .page-content .projects-section .projects-container .project-item .project-item__face .project-item__image-container { width: 12rem; height: 12rem; }
@@ -48,12 +54,18 @@ hr { background-color: #7957d5; border: none; display: block; height: 2px; margi
 
 .page.page--projects .page-content .projects-section .projects-container .project-item .project-item__face .project-item__title { color: #363636; margin: 1rem 0; font-family: Roboto, sans-serif; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; text-align: center; }
 
-.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__face .project-item__description { color: #363636; margin-bottom: .5rem; padding: 0 .5rem; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 16px; text-align: center; }
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__face .project-item__description { color: #363636; margin: 0 0 .5rem 0; padding: 0 .5rem; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 16px; text-align: center; }
 
-.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back { position: absolute; top: 0; bottom: 0; left: 0; right: 0; transform: rotateY(-180deg) translateZ(-1px); z-index: -1; background-color: #fff; border-radius: 0.5rem; padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 250ms transform ease-in-out, 250ms z-index ease-in-out; }
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back { position: absolute; top: 0; bottom: 0; left: 0; right: -1px; transform: rotateY(-180deg) translateZ(-1px); z-index: -1; background-color: #fff; border-radius: 0.5rem; padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 250ms transform ease-in-out, 250ms z-index ease-in-out; }
 
 .page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back .project-item__labels { padding: 0.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
 .page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back .project-item__labels .project-item__label { border-radius: 0.25rem; color: #7957d5; background: #f5f5f5; width: fit-content; display: inline-block; transition: 50ms background-color ease-in-out; cursor: pointer; font-size: 0.875rem; line-height: 1rem; padding: 0.25rem; margin: 0.125rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back .project-item__read-more { background: #7957d5; color: #fff; padding: 0.125rem 0.5rem; border-radius: 0.25rem; text-decoration: none; height: 1.25rem; line-height: 1.25rem; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back .project-item__read-more:hover { color: #ffdd57; }
+
+.page.page--projects .page-content .projects-section .projects-container .project-item .project-item__back .project-item__date { position: absolute; bottom: 0.5rem; right: 0.5rem; color: #b3b3b3; }
 
 /*# sourceMappingURL=projects.css.map */

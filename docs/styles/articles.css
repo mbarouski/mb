@@ -26,6 +26,6 @@ hr { background-color: #7957d5; border: none; display: block; height: 2px; margi
 
 .page.page--articles .page-content { padding: 3rem 1.5rem; max-width: 1344px; }
 
-.page.page--articles .page-content .title { margin-bottom: 0; }
+.page.page--articles .page-content .title { margin-bottom: 0; font-size: 1rem; }
 
 /*# sourceMappingURL=articles.css.map */

@@ -121,7 +121,7 @@
               top: 0;
               bottom: 0;
               left: 0;
-              right: 0;
+              right: -1px;
 
               transform: rotateY(-180deg) translateZ(-1px);
               z-index: -1;
@@ -173,6 +173,13 @@
                 &:hover {
                   color: $color-yellow;
                 }
+              }
+
+              .project-item__date {
+                position: absolute;
+                bottom: 0.5rem;
+                right: 0.5rem;
+                color: $color-medium-grey;
               }
             }
           }
