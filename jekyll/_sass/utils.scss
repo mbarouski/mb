@@ -1,6 +1,7 @@
 @import './colors.scss';
 
 $mobile-breakpoint: 640px;
+$page-content-width: 1080px;
 
 @mixin rounded {
   border-radius: 50%;

@@ -12,11 +12,26 @@
 
     .page-content {
       padding: 3rem 1.5rem;
-      max-width: 1344px;
+      width: $page-content-width;
 
-      .title {
-        margin-bottom: 0;
-        font-size: 1rem;
+      .articles {
+        .articles__item {
+          .articles__item-date,
+          .articles__item-link {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+          }
+
+          .articles__item-date {
+            
+          }
+
+          .articles__item-link {
+            font-weight: 500;
+          }
+        }
       }
     }
   }
