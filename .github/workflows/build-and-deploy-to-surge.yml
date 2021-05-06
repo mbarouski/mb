@@ -20,7 +20,7 @@ jobs:
         CI: true
     - name: Install surge and Deploy
       run: |
-        npm i -g surge
+        yarn add surge
         ./deploy-to-surge.sh
       env:
         SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}

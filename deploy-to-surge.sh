@@ -1,1 +1,1 @@
-surge $PWD/dist https://maksim-barouski.surge.sh
+yarn surge $PWD/dist https://maksim-barouski.surge.sh
