@@ -13,6 +13,7 @@
     .page-content {
       padding: 3rem 1.5rem;
       width: $page-content-width;
+      min-height: 100vh;
 
       .articles {
         .articles__item {
