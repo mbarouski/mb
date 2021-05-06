@@ -13,19 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
     - name: Prepare
       run: |
-        yarn
         ./prepare-for-publish.sh
       env:
         CI: true
     - name: Install surge and Deploy
       run: |
-        npm i -g surge
+        yarn add surge
         ./deploy-to-surge.sh
       env:
         SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}

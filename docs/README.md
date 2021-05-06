@@ -1,4 +1,4 @@
-# Attempt to port Maksim Barouski website to Jekyll
+# My web pages on Jekyll
 
 ## Requirements
 

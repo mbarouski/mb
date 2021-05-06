@@ -6,4 +6,3 @@ build:
 	 rm -rf ../docs
 	 mkdir ../docs
 	 cp -r _site/* ../docs/
-
