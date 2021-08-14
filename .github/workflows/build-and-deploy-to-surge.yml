@@ -14,11 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install surge and Deploy
-      env:
-        CI: true
       run: |
         yarn add surge
         ./deploy-to-surge.sh
       env:
         SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+        CI: true
