@@ -1,0 +1,28 @@
+.nice-table {
+    .nice-table__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        .nice-table__cell {
+            text-align: center;
+            color: $color-black;
+            margin: 0;
+            background-color: $color-yellow;
+            padding: 1rem;
+            outline: 2px solid $color-black;
+            outline-offset: -1px;
+            flex: 1;
+            display: flex;
+
+            &.nice-table__cell--width-by-content {
+                flex: 0;
+            }
+
+            &.nice-table__cell--centered {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
