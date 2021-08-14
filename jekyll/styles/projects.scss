@@ -3,195 +3,110 @@
 
 @import 'utils.scss';
 @import 'colors.scss';
+@import 'typography.scss';
+@import 'nice-table.scss';
 
 .page {
   &.page--projects {
     display: flex;
     justify-content: center;
-    background: $color-lighter-grey;
+    background: $color-purple;
 
     .page-content {
-      padding: 3rem 1.5rem;
+      padding: 5rem 1.5rem;
       max-width: $page-content-width;
       min-height: 100vh;
 
-      .projects-section {
-        margin: 2rem 0 3rem 0;
+      .home-link {
+        color: $color-black;
+        @include heading-sm;
+        text-decoration: none;
+      }
 
-        .projects-container {
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          grid-column-gap: 2rem;
-          grid-row-gap: 2rem;
+      .project-item {
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 18rem;
 
-          @media only screen and (min-width: 320px) {
-            grid-template-columns: repeat(1, 1fr);
+        .project-item__face {
+          .project-item__image {
+            width: 8rem;
+            height: 8rem;
+            object-fit: contain;
           }
 
-          @media only screen and (min-width: 480px) {
-            grid-template-columns: repeat(2, 1fr);
+          .project-item__title {
+            color: $color-black;
+            @include heading-sm;
+            text-align: left;
+            margin: 1rem 0;
           }
 
-          @media only screen and (min-width: 640px) {
-            grid-template-columns: repeat(3, 1fr);
+          .project-item__description {
+            color: $color-black;
+            @include paragraph-normal;
+            text-align: left;
+            margin: 0;
+            padding: 0;
           }
+        }
 
-          @media only screen and (min-width: 960px) {
-            grid-template-columns: repeat(4, 1fr);
-          }
+        .project-item__back {
+          margin-top: 3rem;
+          padding: 0;
 
-          .project-item {
-            position: relative;
+          .project-item__labels {
             display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
 
-            &:hover {
-              .project-item__face {
-                transform: rotateY(180deg) translateZ(-1px);
-              }
+            .project-item__date,
+            .project-item__label,
+            .project-item__link {
+              width: fit-content;
+              display: inline-block;
+              transition: 50ms background-color ease-in-out;
+              @include paragraph-small;
 
-              .project-item__back {
-                transform: rotateY(0) translateZ(1px);
-                z-index: 1;
-              }
+              padding: .25rem;
+              margin: .125rem;
+
+              white-space: nowrap;
             }
 
-            &.project-item--side {
-              .project-item__face {
-                overflow: hidden;
-
-                .project-item__images {
-                  margin: -1rem -1rem 0 -1rem;
-
-                  .project-item__image-container {
-                    width: 100%;
-                    min-width: 100%;
-                    height: unset;
-                  }
-                }
-              }
+            .project-item__label {
+              border-radius: 0.25rem;
+              color: $color-purple;
+              background: $color-white;
             }
 
-            $card-border-radius: 1rem;
-
-            .project-item__face {
-              transform: translateZ(1px);
-
-              background-color: $color-white;
-              box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-              border-radius: $card-border-radius;
-              padding: 1rem;
+            .project-item__link {
+              background: $color-purple;
+              color: $color-white;
+              border-radius: 0.25rem;
+              text-decoration: none;
   
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              width: 100%;
-  
-              transition: 250ms transform ease-in-out;
-  
-              .project-item__image-container {
-                width: 12rem;
-                height: 12rem;
-  
-                .project-item__image {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: contain;
-                }
-              }
-  
-              .project-item__title {
-                color: #363636;
-                margin: 1rem 0;
-                
-                font-family: Roboto, sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 1rem;
-                line-height: 1.25rem;
-                text-align: center;
-              }
-  
-              .project-item__description {
-                color: #363636;
-                margin: 0 0 .5rem 0;
-                padding: 0 .5rem;
-  
-                font-family: Roboto;
-                font-style: normal;
-                font-weight: 300;
-                font-size: 0.875rem;
-                line-height: 1.25rem;
-                text-align: center;
-              }
-            }
-
-            .project-item__back {
-              position: absolute;
-              top: -1px;
-              bottom: -1px;
-              left: -1px;
-              right: -1px;
-
-              transform: rotateY(-180deg) translateZ(-1px);
-              z-index: -1;
-
-              background-color: $color-white;
-              border-radius: $card-border-radius;
-              padding: 1rem;
-  
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-  
-              transition: 250ms transform ease-in-out,
-                          250ms z-index ease-in-out;
-
-              .project-item__labels {
-                padding: 0.5rem;
-  
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-  
-                .project-item__label {
-                  border-radius: 0.25rem;
-                  color: $color-purple;
-                  background: $color-lighter-grey;
-                  width: fit-content;
-                  display: inline-block;
-                  transition: 50ms background-color ease-in-out;
-                  cursor: pointer;
-                  font-size: 0.875rem;
-                  line-height: 1rem;
-                  padding: 0.25rem;
-                  margin: 0.125rem;
-                }
-              }
-
-              .project-item__read-more {
-                background: $color-purple;
-                color: $color-white;
-                padding: 0.125rem 0.5rem;
-                border-radius: 0.25rem;
-                text-decoration: none;
-                height: 1.25rem;
-                line-height: 1.25rem;
-
-                &:hover {
-                  color: $color-yellow;
-                }
-              }
-
-              .project-item__date {
-                position: absolute;
-                bottom: 0.75rem;
-                right: 0.75rem;
-                color: $color-medium-grey;
+              &:hover {
+                color: $color-yellow;
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+  .page.page--projects {
+    .page-content {
+      .project-item {
+        min-width: 25rem;
+  
+        .project-item__face {
+          text-align: left;
         }
       }
     }

@@ -13,12 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Prepare
-      run: |
-        ./prepare-for-publish.sh
+    - name: Install surge and Deploy
       env:
         CI: true
-    - name: Install surge and Deploy
       run: |
         yarn add surge
         ./deploy-to-surge.sh

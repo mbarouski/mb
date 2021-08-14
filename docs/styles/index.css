@@ -28,58 +28,28 @@ html { font-size: 16px; }
 
 .page.page--index .page-content { display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; }
 
-.page.page--index .page-content .top { background-color: #6f4bd2; padding: 1.5rem; display: flex; justify-content: center; align-items: center; flex: 1; }
+.page.page--index .page-content .top { background-color: #6f4bd2; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; }
 
-.page.page--index .page-content .top .top-content { max-width: 100%; width: fit-content; height: fit-content; padding: 1rem; border-radius: 0.5rem; display: flex; flex-direction: column; align-items: center; }
+.page.page--index .page-content .top .top-content { max-width: 100%; width: fit-content; height: fit-content; padding: 0; border-radius: 0.5rem; }
 
-.page.page--index .page-content .top .top-content .photo-container { position: relative; z-index: 1; width: 12rem; height: 12rem; border-radius: 50%; cursor: pointer; padding: 3px; border: 5px solid #fff; transition: 150ms border-color ease-in-out; }
+.page.page--index .page-content .top .top-content .fullname { text-align: center; color: #000; margin: 0; background-color: #ffdd57; padding: 1rem; outline: 2px solid #000; outline-offset: -1px; }
 
-.page.page--index .page-content .top .top-content .photo-container:hover { border: 5px solid #ffdd57; }
+.page.page--index .page-content .top .top-content .role-list { margin: 0; text-align: center; background-color: #ffdd57; padding: 1rem; outline: 2px solid #000; outline-offset: -1px; }
 
-.page.page--index .page-content .top .top-content .photo-container:hover .photo-container__surprise-link.photo-container__surprise-link--bottom-left { transform: rotateZ(0) scale(1.5); }
+.page.page--index .page-content .top .top-content .role-list .role-item { color: #000; font-size: 1rem; }
 
-.page.page--index .page-content .top .top-content .photo-container:hover .photo-container__surprise-link.photo-container__surprise-link--top-right { transform: rotateZ(0deg) scale(1.5); }
+.page.page--index .page-content .top .top-content .role-list .role-item a { color: #6f4bd2; font-size: inherit; }
 
-.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link { position: absolute; top: 0; width: 12rem; height: 12rem; display: flex; z-index: -1; }
+.page.page--index .page-content .top .top-content .page-list { display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; margin: 0; }
 
-.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link.photo-container__surprise-link--bottom-left { transition: 250ms transform ease-in-out; left: -50%; transform: rotateZ(-90deg) scale(1.5); align-items: flex-end; justify-content: center; }
+.page.page--index .page-content .top .top-content .page-list .page-item { margin: 0; text-align: center; background-color: #ffdd57; height: fit-content; outline: 2px solid #000; outline-offset: -1px; flex: 1; }
 
-.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link.photo-container__surprise-link--top-right { transition: 250ms transform ease-in-out; left: 50%; transform: rotateZ(-90deg) scale(1.5); align-items: flex-start; justify-content: center; }
+.page.page--index .page-content .top .top-content .page-list .page-item a { color: #000; display: block; width: calc(100% - 2rem); height: 100%; padding: 1rem; }
 
-.page.page--index .page-content .top .top-content .photo-container .photo-container__surprise-link > a { background: #ffdd57; padding: 0.25rem; color: #6f4bd2; }
+.page.page--index .page-content .top .top-content .page-list .page-item a:hover { text-decoration: none; }
 
-.page.page--index .page-content .top .top-content .photo-container .photo { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; }
+.page.page--index .page-content .top .top-content .page-list .page-item a span { font-weight: bold; }
 
-.page.page--index .page-content .top .top-content .fullname { text-align: center; color: #fff; margin: 3rem 0 0.5rem 0; cursor: pointer; }
-
-.page.page--index .page-content .top .top-content .role-list { margin: 0; text-align: center; }
-
-.page.page--index .page-content .top .top-content .role-list .role-item { color: #fff; font-size: 1rem; }
-
-.page.page--index .page-content .top .top-content .role-list .role-item a { color: #ffdd57; font-size: inherit; }
-
-.page.page--index .page-content .top .top-content .link-list { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; margin-bottom: 0; }
-
-.page.page--index .page-content .top .top-content .link-list .link-item { width: 2rem; height: 2rem; margin: 0.25rem; }
-
-.page.page--index .page-content .top .top-content .link-list .link-item.link-item--rotatable { transition: 0.25s transform ease-in-out; }
-
-.page.page--index .page-content .top .top-content .link-list .link-item.link-item--rotatable:hover { transform: rotateZ(-20deg) scale(1.1); }
-
-.page.page--index .page-content .top .top-content .link-list .link-item a { width: 100%; height: 100%; }
-
-.page.page--index .page-content .top .top-content .link-list .link-item a svg { width: 100%; height: 100%; fill: #fff; }
-
-.page.page--index .page-content .top .top-content .link-list .link-item:hover a svg { fill: #ffdd57; }
-
-.page.page--index .page-content .page-list-wrapper { display: flex; justify-content: center; background-color: #ffdd57; }
-
-.page.page--index .page-content .page-list-wrapper .page-list { display: flex; flex-direction: column; margin: 0; }
-
-.page.page--index .page-content .page-list-wrapper .page-list .page-item { margin: 0.5rem; text-align: center; margin: 1rem; }
-
-.page.page--index .page-content .page-list-wrapper .page-list .page-item a:hover { color: #ffdd57; }
-
-@media only screen and (min-width: 640px) { .page.page--index .page-content .top .top-content .role-list .role-item { white-space: nowrap; } .page.page--index .page-content .page-list-wrapper .page-list { flex-direction: row; } }
+.page.page--index .page-content .top .top-content .page-list .page-item a svg { width: .875rem; height: .875rem; }
 
 /*# sourceMappingURL=index.css.map */
