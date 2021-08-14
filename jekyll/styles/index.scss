@@ -64,109 +64,44 @@ html {
               }
             }
           }
-    
-          .link-list {
+
+          .page-list {
             display: flex;
+            flex-direction: row;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 1rem 0 0;
-  
-            .link-item {
-              width: 2rem;
-              height: 2rem;
-              margin: 0.25rem;
-
-              &.link-item--rotatable {
-                transition: 0.25s transform ease-in-out;
-  
-                &:hover {
-                  transform: rotateZ(-20deg) scale(1.1);
-                }
-              }
+            margin: 0;
+    
+            .page-item {
+              margin: 0;
+              text-align: center;
+              background-color: $color-yellow;
+              height: fit-content;
+              outline: 2px solid $color-black;
+              outline-offset: -1px;
+              flex: 1;
     
               a {
-                width: 100%;
+                color: $color-black;
+                display: block;
+                width: calc(100% - 2rem);
                 height: 100%;
+                padding: 1rem;
+    
+                &:hover {
+                  text-decoration: none;
+                }
+    
+                span {
+                  font-weight: bold;
+                }
     
                 svg {
-                  width: 100%;
-                  height: 100%;
-                  fill: $color-white;
-                }
-              }
-    
-              &:hover {
-                a {
-                  svg {
-                    fill: $color-yellow;
-                  }
+                  width: .875rem;
+                  height: .875rem;
                 }
               }
             }
-          }
-        }
-      }
-
-      .page-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0;
-
-        .page-item {
-          margin: 0;
-          text-align: center;
-          background-color: $color-yellow;
-          height: fit-content;
-          outline: 2px solid $color-black;
-          outline-offset: -1px;
-          flex: 1;
-
-          a {
-            color: $color-black;
-            display: block;
-            width: calc(100% - 2rem);
-            height: 100%;
-            padding: 1rem;
-
-            &:hover {
-              text-decoration: none;
-            }
-
-            span {
-              font-weight: bold;
-            }
-
-            svg {
-              width: .875rem;
-              height: .875rem;
-            }
-          }
-        }
-      }
-
-      @media only screen and (min-width: $mobile-breakpoint) {
-        .top {
-          .top-content {
-            .role-list {
-              .role-item {
-                white-space: nowrap;
-              }
-            }
-          }
-        }
-
-        .page-list {
-          flex-direction: row;
-
-          .page-item {
-            // opacity: .75;
-            // transition: opacity 50ms linear;
-            
-            // &:hover {
-            //   opacity: 1;
-            // }
           }
         }
       }

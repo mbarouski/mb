@@ -7,39 +7,30 @@ roles:
   - name: 'Bachelor of Computer Science'
     place: 'BSUIR'
     url: 'https://bsuir.by'
-links:
-  - url: 'https://www.linkedin.com/in/maksim-barouski/'
-    icon: 'linkedin'
-    rotatable: true
-  - url: 'https://github.com/maximka777'
-    icon: 'github'
-  - url: 'mailto:maksim.borovskij@yandex.ru'
-    icon: 'mail'
-  - url: 'https://t.me/mbarouski'
-    icon: 'telegram'
-  - url: 'https://www.instagram.com/maximka_anatolevich'
-    icon: 'instagram'
-  - url: 'https://twitter.com/MBorovskij'
-    icon: 'twitter'
-
 pages:
   - url: 'projects.html'
     name: 'Projects'
   - url: 'https://www.linkedin.com/in/maksim-barouski/'
     icon: 'linkedin'
-    rotatable: true
+    target: '_blank'
   - url: 'https://github.com/maximka777'
     icon: 'github'
+    target: '_blank'
   - url: 'mailto:maksim.borovskij@yandex.ru'
     icon: 'mail'
+    target: '_blank'
   - url: 'https://t.me/mbarouski'
     icon: 'telegram'
+    target: '_blank'
   - url: 'https://www.instagram.com/maximka_anatolevich'
     icon: 'instagram'
+    target: '_blank'
   - url: 'https://www.instagram.com/photodos/'
     name: 'Photography'
+    target: '_blank'
   - url: 'https://twitter.com/MBorovskij'
     icon: 'twitter'
+    target: '_blank'
   - url: 'articles.html'
     name: 'Writing'
 ---
@@ -68,7 +59,7 @@ pages:
             <ul class="page-list">
               {% for p in page.pages %}
                 <li class="page-item">
-                  <a href="{{ p.url }}">
+                  <a href="{{ p.url }}" {% if p.target %}target="{{p.target}}"{%endif%}>
                     {% if p.name %}
                       <span>{{ p.name }}</span>
                     {% else %}
@@ -80,26 +71,9 @@ pages:
                 </li>
               {% endfor %}
             </ul>
-
-            <!-- <ul class="link-list">
-              {% for link in page.links %}
-                {% if link.rotatable %}
-                  <li class="link-item link-item--rotatable">
-                {% else %}
-                  <li class="link-item">
-                {% endif %}
-                <a href="{{ link.url }}">
-                  <svg>
-                    <use xlink:href="assets/icons.svg#{{link.icon}}" />
-                  </svg>
-                </a>
-              </li>
-              {% endfor %}
-            </ul> -->
           </div>
         </div>
       </div>
     </div>
   </body>
 </html>
-
