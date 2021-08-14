@@ -1,9 +1,9 @@
 ---
-fullname: 'Maksim A. Barouski'
+fullname: 'Maksim Barouski'
 roles:
-  - name: 'Software Engineer'
-    place: 'DffrntLab'
-    url: 'https://dffrntlab.co'
+  - name: 'Backend Engineer & Lead Frontend Engineer'
+    place: 'Montro'
+    url: 'https://montro.com'
   - name: 'Bachelor of Computer Science'
     place: 'BSUIR'
     url: 'https://bsuir.by'
@@ -25,6 +25,21 @@ links:
 pages:
   - url: 'projects.html'
     name: 'Projects'
+  - url: 'https://www.linkedin.com/in/maksim-barouski/'
+    icon: 'linkedin'
+    rotatable: true
+  - url: 'https://github.com/maximka777'
+    icon: 'github'
+  - url: 'mailto:maksim.borovskij@yandex.ru'
+    icon: 'mail'
+  - url: 'https://t.me/mbarouski'
+    icon: 'telegram'
+  - url: 'https://www.instagram.com/maximka_anatolevich'
+    icon: 'instagram'
+  - url: 'https://www.instagram.com/photodos/'
+    name: 'Photography'
+  - url: 'https://twitter.com/MBorovskij'
+    icon: 'twitter'
   - url: 'articles.html'
     name: 'Writing'
 ---
@@ -42,20 +57,31 @@ pages:
       <div class="page-content">
         <div class="top">
           <div class="top-content">
-            <div class="photo-container">
-              <div class="photo-container__surprise-link photo-container__surprise-link--bottom-left"><a href="projects.html">Projects</a></div>
-              <div class="photo-container__surprise-link photo-container__surprise-link--top-right"><a href="articles.html">Articles</a></div>
-              <img class="photo" src="assets/images/me.jpg">
-            </div>
             <h1 class="fullname">{{ page.fullname }}</h1>
 
             <ul class="role-list">
               {% for role in page.roles %}
-                <li class="role-item">{{ role.name }} [<a href="{{ role.url }}">{{ role.place }}</a>]</li>
+                <li class="role-item">{{ role.name }}&nbsp;@&nbsp;<a href="{{ role.url }}">{{ role.place }}</a></li>
               {% endfor %}
             </ul>
 
-            <ul class="link-list">
+            <ul class="page-list">
+              {% for p in page.pages %}
+                <li class="page-item">
+                  <a href="{{ p.url }}">
+                    {% if p.name %}
+                      <span>{{ p.name }}</span>
+                    {% else %}
+                      <svg>
+                        <use xlink:href="assets/icons.svg#{{p.icon}}" />
+                      </svg>
+                    {% endif %}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+
+            <!-- <ul class="link-list">
               {% for link in page.links %}
                 {% if link.rotatable %}
                   <li class="link-item link-item--rotatable">
@@ -69,18 +95,9 @@ pages:
                 </a>
               </li>
               {% endfor %}
-            </ul>
+            </ul> -->
           </div>
         </div>
-        <!-- <div class="page-list-wrapper">
-          <ul class="page-list">
-            {% for p in page.pages %}
-              <li class="page-item">
-                <a href="{{ p.url }}">{{ p.name }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div> -->
       </div>
     </div>
   </body>

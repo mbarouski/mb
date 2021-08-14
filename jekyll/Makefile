@@ -2,7 +2,5 @@ up:
 	@bundle exec jekyll serve --trace
 	 
 build:
-	@bundle exec jekyll build
-	 rm -rf ../docs
-	 mkdir ../docs
-	 cp -r _site/* ../docs/
+	@rm -rf ../docs
+	 bundle exec jekyll build
