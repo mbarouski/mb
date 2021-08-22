@@ -1,19 +1,21 @@
+$font-primary: Arial, Helvetica, sans-serif;
+
 @mixin heading-sm {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-primary;
     font-size: 1.25rem;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 
 @mixin paragraph-normal {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.125rem;
+    font-family: $font-primary;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
 }
 
 @mixin paragraph-small {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-primary;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.125rem;

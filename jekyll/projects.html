@@ -21,7 +21,7 @@ projects:
       - 'Elastic'
     links:
       - url: 'https://montro.com'
-        title: 'Visit'
+        title: 'Visit website'
     period: '2019-now'
   - name: 'HearHear'
     description: 'Ask anybody, anything. Together, we will get an answer.'
@@ -34,7 +34,7 @@ projects:
       - 'Cassandra'
     links:
       - url: 'https://hearhear.app'
-        title: 'Visit'
+        title: 'Visit website'
     period: '2019'
   - name: 'Consul LB GCE'
     description: 'Configure GCE load balancer based on Consul data about registered services automatically.'
@@ -73,7 +73,7 @@ projects:
       - 'Cassandra'
     links:
       - url: 'https://earthtoday.com'
-        title: 'Visit'
+        title: 'Visit website'
     period: '2018-2020'
   - name: 'Visual Server'
     description: 'A Revolutionary Website Builder For Creatives. Designed Especially for Photographers and Artists.'
@@ -86,7 +86,7 @@ projects:
       - 'MSSQL'
     links:
       - url: 'https://app.visualserver.com/'
-        title: 'Visit'
+        title: 'Visit website'
     period: '2017-2018'
   - name: 'Ezispeak Video Interpreter'
     description: 'This app allows you to connect a video interpreter on demand for communication with a doctor.'
@@ -126,27 +126,17 @@ projects:
               {% for project in page.projects %}
                   {% if project.group == group.id %}
                       <div class="project-item project-item--{{ project.group }} nice-table__cell">
-                        <div class="project-item__face">
-                          <div class="project-item__top">
-                            <img class="project-item__image" src="{{ project.image }}">
-                            <h3 class="project-item__title">{{ project.name }}</h3>
-                            <p class="project-item__description">{{ project.description }}</p>
-                          </div>
+                        <div class="project-item__image-container">
+                          <img class="project-item__image" src="{{ project.image }}">
                         </div>
-                        <div class="project-item__back">
-                          <div class="project-item__labels">
-                            {% for link in project.links %}
-                              <a
+                        <div class="project-item__information-container">
+                          <h3 class="project-item__title">{{ project.name }}</h3>
+                          <p class="project-item__description">{{ project.description }}</p>
+                          <p class="project-item__links">{% for link in project.links %}<a
                                 href="{{link.url}}"
                                 class="project-item__link"
                                 target="_blank"
-                              >{{ link.title }}</a>
-                            {% endfor %}
-                            <span class="project-item__date">{{ project.period }}</span>
-                            {% for label in project.labels %}
-                              <div class="project-item__label">{{ label }}</div>
-                            {% endfor %}
-                          </div>
+                              >{{ link.title }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
                         </div>
                       </div>
                   {% endif %}

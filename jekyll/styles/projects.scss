@@ -6,6 +6,11 @@
 @import 'typography.scss';
 @import 'nice-table.scss';
 
+html {
+  font-size: 16px;
+}
+
+
 .page {
   &.page--projects {
     display: flex;
@@ -26,71 +31,49 @@
       .project-item {
         flex-direction: column;
         justify-content: space-between;
-        min-width: 18rem;
+        flex: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
 
-        .project-item__face {
+        .project-item__image-container {
+          padding: 1rem;
+          border-right: 1px dashed black;
+
           .project-item__image {
             width: 8rem;
             height: 8rem;
             object-fit: contain;
           }
+        }
+
+        .project-item__information-container {
+          padding: 1rem;
 
           .project-item__title {
             color: $color-black;
             @include heading-sm;
             text-align: left;
-            margin: 1rem 0;
+            margin: 0 0 1rem 0;
           }
 
           .project-item__description {
             color: $color-black;
             @include paragraph-normal;
             text-align: left;
-            margin: 0;
+            margin: 1rem 0;
             padding: 0;
           }
-        }
 
-        .project-item__back {
-          margin-top: 3rem;
-          padding: 0;
+          .project-item__links {
+            @include paragraph-normal;
+            color: $color-black;
+            text-align: left;
+            margin: 1rem 0 0;
 
-          .project-item__labels {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            .project-item__date,
-            .project-item__label,
             .project-item__link {
-              width: fit-content;
-              display: inline-block;
-              transition: 50ms background-color ease-in-out;
-              @include paragraph-small;
-
-              padding: .25rem;
-              margin: .125rem;
-
-              white-space: nowrap;
-            }
-
-            .project-item__label {
-              border-radius: 0.25rem;
               color: $color-purple;
-              background: $color-white;
-            }
-
-            .project-item__link {
-              background: $color-purple;
-              color: $color-white;
-              border-radius: 0.25rem;
               text-decoration: none;
-  
-              &:hover {
-                color: $color-yellow;
-              }
             }
           }
         }
@@ -103,11 +86,7 @@
   .page.page--projects {
     .page-content {
       .project-item {
-        min-width: 25rem;
-  
-        .project-item__face {
-          text-align: left;
-        }
+        flex-direction: row;
       }
     }
   }
