@@ -40,7 +40,7 @@ html { font-size: 16px; }
 
 .page.page--index .page-content .top .top-content .role-list .role-item a { color: #6f4bd2; font-size: inherit; }
 
-.page.page--index .page-content .top .top-content .page-list { display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; margin: 0; }
+.page.page--index .page-content .top .top-content .page-list { display: flex; flex-direction: row; justify-content: center; align-items: stretch; flex-wrap: wrap; margin: 0; }
 
 .page.page--index .page-content .top .top-content .page-list .page-item { margin: 0; text-align: center; background-color: #ffdd57; height: fit-content; outline: 2px solid #000; outline-offset: -1px; flex: 1; }
 
