@@ -44,7 +44,7 @@ html { font-size: 16px; }
 
 .page.page--index .page-content .top .top-content .page-list .page-item { margin: 0; text-align: center; background-color: #ffdd57; height: fit-content; outline: 2px solid #000; outline-offset: -1px; flex: 1; }
 
-.page.page--index .page-content .top .top-content .page-list .page-item a { color: #000; display: block; width: calc(100% - 2rem); height: 100%; padding: 1rem; }
+.page.page--index .page-content .top .top-content .page-list .page-item a { color: #000; display: block; width: calc(100% - 2rem); height: auto; padding: 1rem; }
 
 .page.page--index .page-content .top .top-content .page-list .page-item a:hover { text-decoration: none; }
 
