@@ -18,22 +18,28 @@ articles:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.fullname }} | {{ page.title }}</title>
+    <title>{{ page.title }} | {{ page.fullname }}</title>
     <link rel="stylesheet" href="styles/articles.css">
   </head>
   <body>
     <div class="page page--articles">
       <div class="page-content">
-        <a href="index.html" class="link">main</a>
-        <h1>{{ page.title }}</h1>
-        <hr>
-        <ul class="articles">
+
+        <div class="nice-table">
+          <div class="nice-table__row">
+            <a href="index.html" class="home-link nice-table__cell nice-table__cell--width-by-content nice-table__cell--centered">home</a>
+            <h1 class="title nice-table__cell nice-table__cell--centered">{{ page.title }}</h1>
+          </div>
           {% for article in page.articles %}
-            <li class="articles__item">
-              <span class="articles__item-date">{{ article.date }} - </span><a href="{{ article.url }}" class="link articles__item-link">{{ article.title }}</a>
-            </li>
+            <div class="nice-table__row">
+              <div class="nice-table__cell">
+                <p class="article-item">
+                  <span>{{ article.date }} - </span><a href="{{ article.url }}" class="article-item__link" target="_blank">{{ article.title }}</a>
+                </p>
+              </div>
+            </div>
           {% endfor %}
-        </ul>
+        </div>
       </div>
     </div>
   </body>

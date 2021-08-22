@@ -108,7 +108,7 @@ projects:
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.fullname }} | {{ page.title }}</title>
+    <title>{{ page.title }} | {{ page.fullname }}</title>
     <link rel="stylesheet" href="styles/projects.css">
   </head>
   <body>
@@ -118,9 +118,9 @@ projects:
           {% for group in page.groups %}
             <div class="nice-table__row">
               {% if forloop.index == 1 %}
-                <a href="index.html" class="home-link nice-table__cell nice-table__cell--width-by-content nice-table__cell--centered">main</a>
+                <a href="index.html" class="home-link nice-table__cell nice-table__cell--width-by-content nice-table__cell--centered">home</a>
               {% endif %}
-              <h1 class="title nice-table__cell nice-table__cell--centered">{{ group.name }}</h1>
+              <h1 class="group-title nice-table__cell nice-table__cell--centered">{{ group.name }}</h1>
             </div>
             <div class="nice-table__row">
               {% for project in page.projects %}
