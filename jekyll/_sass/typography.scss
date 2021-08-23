@@ -28,7 +28,7 @@ $font-family-paragraph: 'Open Sans', sans-serif;
 
 @mixin paragraph-small {
     font-family: $font-family-paragraph;
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 400;
-    line-height: 1.125rem;
+    line-height: 1.25rem;
 }

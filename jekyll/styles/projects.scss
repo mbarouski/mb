@@ -40,6 +40,16 @@ html {
         display: flex;
         justify-content: flex-start;
 
+        &.project-item--side {
+          .project-item__image-container {
+            padding: 0;
+
+            .project-item__image {
+              width: 10rem;
+            }
+          }
+        }
+
         .project-item__image-container {
           padding: 1rem;
           border-right: 1px dashed black;
@@ -66,6 +76,13 @@ html {
             margin: 0;
           }
 
+          .project-item__period {
+            @include paragraph-small;
+            color: rgba($color-black, .75);
+            text-align: left;
+            margin: 0;
+          }
+
           .project-item__description {
             color: $color-black;
             @include paragraph-normal;
@@ -83,6 +100,17 @@ html {
             .project-item__link {
               color: $color-purple;
               @include paragraph-normal;
+            }
+          }
+
+          .project-item__technologies {
+            @include paragraph-small;
+            color: rgba($color-black, .75);
+            text-align: left;
+            margin: 0 0 1rem;
+
+            &:last-child {
+              margin: 0;
             }
           }
         }
