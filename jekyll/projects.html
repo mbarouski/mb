@@ -6,55 +6,79 @@ groups:
     name: 'Work projects'
   - id: 'opensource'
     name: 'Open source projects'
+  - id: 'side'
+    name: 'Side projects'
 projects:
   - name: 'Montro'
     description: 'With Montro, you can explore the history of your favourite watch, read about it from the most respected opinions in the industry and then buy it from some of the best retailers in your area.'
     group: 'main'
     image: 'assets/images/montro.png'
-    labels:
-      - 'Java/Kotlin + Spring'
+    technologies:
+      - 'Kotlin'
+      - 'Java'
+      - 'Spring'
       - 'Vue'
+      - 'TypeScript'
+      - 'JavaScript'
       - 'Go'
-      - 'DevOps'
-      - 'Postgres'
+      - 'PostgreSQL'
       - 'Cassandra'
-      - 'Elastic'
+      - 'ElasticSearch'
+      - 'Kafka'
+      - 'Google Cloud'
+      - 'Consul'
+      - 'Nomad'
+      - 'Terraform'
+      - 'SaltStack'
+      - 'Prometheus'
+      - 'Grafana'
+      - 'CircleCI'
     links:
       - url: 'https://montro.com'
-        title: 'Visit website'
+        title: 'Website'
     period: '2019-now'
   - name: 'HearHear'
     description: 'Ask anybody, anything. Together, we will get an answer.'
     group: 'main'
     image: 'assets/images/hh.svg'
-    labels:
-      - 'Java + Spring'
+    technologies:
+      - 'Java'
+      - 'Spring'
       - 'Nuxt.js'
-      - 'DevOps'
+      - 'TypeScript'
+      - 'JavaScript'
       - 'Cassandra'
+      - 'Google Cloud'
+      - 'Consul'
+      - 'Nomad'
+      - 'Terraform'
+      - 'SaltStack'
+      - 'Prometheus'
+      - 'Grafana'
+      - 'CircleCI'
     links:
       - url: 'https://hearhear.app'
-        title: 'Visit website'
+        title: 'Website'
     period: '2019'
   - name: 'Consul LB GCE'
     description: 'Configure GCE load balancer based on Consul data about registered services automatically.'
     group: 'opensource'
     image: 'assets/images/consul-lb-gce.png'
-    labels:
-      - 'Google Cloud Engine'
+    technologies:
+      - 'Google Cloud'
       - 'Consul'
       - 'Go'
     links:
       - url: 'https://github.com/dffrntmedia/consul-lb-gce'
         title: 'GitHub'
       - url: 'https://medium.com/@mbarouski/google-compute-engine-load-balancing-with-consul-da3ada21d010'
-        title: 'Article'
+        title: 'Medium'
     period: '2019-now'
   - name: 'Thumbor request modifier HTTP loader'
     description: 'Custom HTTP loader for Thumbor which allows modifying client request when certain conditions are met.'
     group: 'opensource'
     image: 'assets/images/thumbor-plugin.png'
-    labels:
+    technologies:
       - 'Thumbor'
       - 'Python'
     links:
@@ -65,34 +89,46 @@ projects:
     description: 'EarthToday is a community-driven content platform to inform, inspire, educate and entertain.'
     group: 'main'
     image: 'assets/images/et.png'
-    labels:
-      - 'Java + Spring'
+    technologies:
+      - 'Java'
+      - 'Spring'
       - 'Angular'
-      - 'DevOps'
+      - 'TypeScript'
+      - 'JavaScript'
       - 'Neo4j'
       - 'Cassandra'
+      - 'Google Cloud'
+      - 'Consul'
+      - 'Nomad'
+      - 'Terraform'
+      - 'SaltStack'
+      - 'Prometheus'
+      - 'Grafana'
     links:
       - url: 'https://earthtoday.com'
-        title: 'Visit website'
+        title: 'Website'
     period: '2018-2020'
   - name: 'Visual Server'
     description: 'A Revolutionary Website Builder For Creatives. Designed Especially for Photographers and Artists.'
     group: 'main'
     image: 'assets/images/vs.png'
-    labels:
+    technologies:
       - 'Node.js'
       - 'Angular'
       - 'JavaScript'
       - 'MSSQL'
+      - 'BitBucket pipelines'
+      - 'Nginx'
+
     links:
       - url: 'https://app.visualserver.com/'
-        title: 'Visit website'
+        title: 'Website'
     period: '2017-2018'
   - name: 'Ezispeak Video Interpreter'
     description: 'This app allows you to connect a video interpreter on demand for communication with a doctor.'
     group: 'main'
     image: 'assets/images/ezispeak.png'
-    labels:
+    technologies:
       - 'Node.js'
       - 'React'
       - 'Swift'
@@ -101,6 +137,75 @@ projects:
       - url: 'https://apps.apple.com/us/app/ezispeak-video-interpreter/id1256607378'
         title: 'App Store'
     period: '2017'
+  - name: 'EcoTrash'
+    description: 'Motivates you to manage garbage properly. Game-like application. It''s stopped on stage of simple prototype.'
+    group: 'side'
+    image: 'assets/images/ecotrash.jpg'
+    technologies:
+      - 'Unity'
+      - 'Go'
+      - 'MySQL'
+    period: '2019-2020'
+  - name: 'Skaz'
+    description: 'Online book store.'
+    group: 'side'
+    image: 'assets/images/skaz.png'
+    technologies:
+      - 'Angular'
+    period: '2019'
+  - name: 'Trailer'
+    description: '"Hello, world!" project in welding craft. Made it together with my father based on his old car chassis.'
+    group: 'side'
+    image: 'assets/images/trailer.jpg'
+    technologies:
+      - 'Welding machine'
+      - 'Grinder'
+    period: '2019'
+#  - name: 'Family Calendar'
+#    description: 'Calendar mobile application for the whole family.'
+#    group: 'side'
+#    image: 'assets/images/family-calendar.jpg'
+#    technologies:
+#      - 'Node.js'
+#      - 'Express'
+#      - 'Ionic'
+#      - 'Angular'
+#      - 'MongoDB'
+#    links:
+#      - url: 'https://play.google.com/store/apps/details?id=com.ipmakarchuk.familycalendar&hl=en_US'
+#        title: 'Google Play'
+#    period: '2019'
+  - name: 'R-409 Virtual Tour'
+    description: 'Unity based application for learning radio relay station R-409.'
+    group: 'side'
+    image: 'assets/images/r409.png'
+    technologies:
+      - 'Blender'
+      - 'Unity'
+      - 'C#'
+    period: '2016-2017'
+#  - name: 'Totalizator EPAM Java Course Edition'
+#    description: 'It''s a final project for EPAM Java course. It got excellent mark from reviewers. It''s web app on Java EE for making bets on sport events.'
+#    group: 'side'
+#    image: 'assets/images/totalizator.jpg'
+#    technologies:
+#      - 'Java'
+#      - 'JSP'
+#      - 'JDBC'
+#      - 'MySQL'
+#      - 'jQuery'
+#    period: '2016'
+  - name: 'PhoenixPay'
+    description: 'Play Market for everything. It''s a startup project I was a part of. We won participation at Tech Minsk Summer''16 at Imaguru and support from Belgazprombank on BankIT''16.'
+    links:
+      - url: 'https://www.linkedin.com/pulse/%D0%BA%D0%B5%D0%B9%D1%81-%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F-%D0%BF%D1%80%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8-%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-frolova-1c/'
+        title: 'LinkedIn post'
+    group: 'side'
+    image: 'assets/images/phoenixpay.png'
+    technologies:
+      - 'JavaScript'
+      - 'C#'
+    period: '2016'
 ---
 
 <!doctype html>
@@ -131,12 +236,18 @@ projects:
                         </div>
                         <div class="project-item__information-container">
                           <h3 class="project-item__title">{{ project.name }}</h3>
+                          <p class="project-item__period">{{ project.period }}</p>
                           <p class="project-item__description">{{ project.description }}</p>
+                          <p class="project-item__technologies">Technologies: {% for technology in project.technologies %}<span
+                            class="project-item__technology"
+                          >{{ technology }}</span>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
+                          {% if project.links.size > 0 %}
                           <p class="project-item__links">{% for link in project.links %}<a
                                 href="{{link.url}}"
                                 class="project-item__link"
                                 target="_blank"
                               >{{ link.title }}</a>{% if forloop.last == false %}, {% endif %}{% endfor %}</p>
+                          {% endif %}
                         </div>
                       </div>
                   {% endif %}

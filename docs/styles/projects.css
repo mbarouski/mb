@@ -43,6 +43,10 @@ html { font-size: 16px; }
 
 .page.page--projects .page-content .project-item { flex-direction: column; justify-content: space-between; flex: 100%; padding: 0; display: flex; justify-content: flex-start; }
 
+.page.page--projects .page-content .project-item.project-item--side .project-item__image-container { padding: 0; }
+
+.page.page--projects .page-content .project-item.project-item--side .project-item__image-container .project-item__image { width: 10rem; }
+
 .page.page--projects .page-content .project-item .project-item__image-container { padding: 1rem; border-right: 1px dashed black; display: flex; align-items: center; }
 
 .page.page--projects .page-content .project-item .project-item__image-container .project-item__image { width: 8rem; height: auto; object-fit: contain; }
@@ -51,11 +55,17 @@ html { font-size: 16px; }
 
 .page.page--projects .page-content .project-item .project-item__information-container .project-item__title { color: #000; font-family: "Roboto", sans-serif; font-size: 1.25rem; font-weight: 600; line-height: 1.75rem; letter-spacing: 1px; text-align: left; margin: 0; }
 
+.page.page--projects .page-content .project-item .project-item__information-container .project-item__period { font-family: "Open Sans", sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.25rem; color: rgba(0, 0, 0, 0.75); text-align: left; margin: 0; }
+
 .page.page--projects .page-content .project-item .project-item__information-container .project-item__description { color: #000; font-family: "Open Sans", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5rem; text-align: left; margin: 1rem 0; padding: 0; }
 
 .page.page--projects .page-content .project-item .project-item__information-container .project-item__links { font-family: "Open Sans", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5rem; color: #000; text-align: left; margin: 0; }
 
 .page.page--projects .page-content .project-item .project-item__information-container .project-item__links .project-item__link { color: #6f4bd2; font-family: "Open Sans", sans-serif; font-size: 1rem; font-weight: 400; line-height: 1.5rem; }
+
+.page.page--projects .page-content .project-item .project-item__information-container .project-item__technologies { font-family: "Open Sans", sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.25rem; color: rgba(0, 0, 0, 0.75); text-align: left; margin: 0 0 1rem; }
+
+.page.page--projects .page-content .project-item .project-item__information-container .project-item__technologies:last-child { margin: 0; }
 
 @media only screen and (min-width: 640px) { .page.page--projects .page-content .project-item { flex-direction: row; } }
 
