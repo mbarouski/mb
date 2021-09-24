@@ -146,6 +146,7 @@ projects:
       - 'Go'
       - 'MySQL'
     period: '2019-2020'
+    customClass: 'ecotrash'
   - name: 'Skaz'
     description: 'Online book store.'
     group: 'side'
@@ -161,20 +162,22 @@ projects:
       - 'Welding machine'
       - 'Grinder'
     period: '2019'
-#  - name: 'Family Calendar'
-#    description: 'Calendar mobile application for the whole family.'
-#    group: 'side'
-#    image: 'assets/images/family-calendar.jpg'
-#    technologies:
-#      - 'Node.js'
-#      - 'Express'
-#      - 'Ionic'
-#      - 'Angular'
-#      - 'MongoDB'
-#    links:
-#      - url: 'https://play.google.com/store/apps/details?id=com.ipmakarchuk.familycalendar&hl=en_US'
-#        title: 'Google Play'
-#    period: '2019'
+    customClass: 'trailer'
+  - name: 'Family Calendar'
+    description: 'Calendar mobile application for the whole family.'
+    group: 'side'
+    image: 'assets/images/family-calendar.jpg'
+    technologies:
+      - 'Node.js'
+      - 'Express'
+      - 'Ionic'
+      - 'Angular'
+      - 'MongoDB'
+    links:
+      - url: 'https://play.google.com/store/apps/details?id=com.ipmakarchuk.familycalendar&hl=en_US'
+        title: 'Google Play'
+    period: '2019'
+    customClass: 'family-calendar'
   - name: 'R-409 Virtual Tour'
     description: 'Unity based application for learning radio relay station R-409.'
     group: 'side'
@@ -184,22 +187,27 @@ projects:
       - 'Unity'
       - 'C#'
     period: '2016-2017'
-#  - name: 'Totalizator EPAM Java Course Edition'
-#    description: 'It''s a final project for EPAM Java course. It got excellent mark from reviewers. It''s web app on Java EE for making bets on sport events.'
-#    group: 'side'
-#    image: 'assets/images/totalizator.jpg'
-#    technologies:
-#      - 'Java'
-#      - 'JSP'
-#      - 'JDBC'
-#      - 'MySQL'
-#      - 'jQuery'
-#    period: '2016'
+    customClass: 'r-409'
+  - name: 'Sport Bets'
+    description: 'It''s a final project for EPAM Java course. It got excellent mark from reviewers. It''s web app on Java EE for making bets on sport events.'
+    group: 'side'
+    image: 'assets/images/epam-java-course.png'
+    technologies:
+      - 'Java'
+      - 'JSP'
+      - 'JDBC'
+      - 'MySQL'
+      - 'jQuery'
+    period: '2016'
+    links:
+      - url: 'https://github.com/maximka777/Java.EE.Totalizator'
+        title: 'GitHub'
+    customClass: 'totalizator'
   - name: 'PhoenixPay'
     description: 'Play Market for everything. It''s a startup project I was a part of. We won participation at Tech Minsk Summer''16 at Imaguru and support from Belgazprombank on BankIT''16.'
-    links:
-      - url: 'https://www.linkedin.com/pulse/%D0%BA%D0%B5%D0%B9%D1%81-%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F-%D0%BF%D1%80%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8-%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-frolova-1c/'
-        title: 'LinkedIn post'
+#    links:
+#      - url: 'https://www.linkedin.com/pulse/%D0%BA%D0%B5%D0%B9%D1%81-%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F-%D0%BF%D1%80%D0%B8-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8-%D1%81%D1%82%D0%B0%D1%80%D1%82%D0%B0%D0%BF%D0%B0-%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D1%8B-frolova-1c/'
+#        title: 'LinkedIn post'
     group: 'side'
     image: 'assets/images/phoenixpay.png'
     technologies:
@@ -230,7 +238,7 @@ projects:
             <div class="nice-table__row">
               {% for project in page.projects %}
                   {% if project.group == group.id %}
-                      <div class="project-item project-item--{{ project.group }} nice-table__cell">
+                      <div class="project-item project-item--{{ project.group }} project-item--{{ project.customClass }} nice-table__cell">
                         <div class="project-item__image-container">
                           <img class="project-item__image" src="{{ project.image }}">
                         </div>

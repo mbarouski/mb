@@ -40,6 +40,14 @@ html {
         display: flex;
         justify-content: flex-start;
 
+        &:hover {
+          .project-item__image-container {
+            .project-item__image {
+              opacity: 1;
+            }
+          }
+        }
+
         &.project-item--side {
           .project-item__image-container {
             padding: 0;
@@ -48,6 +56,19 @@ html {
               width: 10rem;
             }
           }
+        }
+
+        &.project-item--ecotrash,                                
+        &.project-item--trailer,                                  
+        &.project-item--family-calendar,                            
+        &.project-item--totalizator {
+          .project-item__image-container {
+            .project-item__image {
+              width: 9rem;        
+              margin: .5rem;                                     
+              border-radius: 1rem;                            
+            }
+          }                  
         }
 
         .project-item__image-container {
@@ -60,6 +81,9 @@ html {
             width: 8rem;
             height: auto;
             object-fit: contain;
+
+            opacity: .125;
+            transition: 100ms opacity ease-in-out;
           }
         }
 

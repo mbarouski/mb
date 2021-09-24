@@ -43,13 +43,17 @@ html { font-size: 16px; }
 
 .page.page--projects .page-content .project-item { flex-direction: column; justify-content: space-between; flex: 100%; padding: 0; display: flex; justify-content: flex-start; }
 
+.page.page--projects .page-content .project-item:hover .project-item__image-container .project-item__image { opacity: 1; }
+
 .page.page--projects .page-content .project-item.project-item--side .project-item__image-container { padding: 0; }
 
 .page.page--projects .page-content .project-item.project-item--side .project-item__image-container .project-item__image { width: 10rem; }
 
+.page.page--projects .page-content .project-item.project-item--ecotrash .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--trailer .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--family-calendar .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--totalizator .project-item__image-container .project-item__image { width: 9rem; margin: .5rem; border-radius: 1rem; }
+
 .page.page--projects .page-content .project-item .project-item__image-container { padding: 1rem; border-right: 1px dashed black; display: flex; align-items: center; }
 
-.page.page--projects .page-content .project-item .project-item__image-container .project-item__image { width: 8rem; height: auto; object-fit: contain; }
+.page.page--projects .page-content .project-item .project-item__image-container .project-item__image { width: 8rem; height: auto; object-fit: contain; opacity: .125; transition: 100ms opacity ease-in-out; }
 
 .page.page--projects .page-content .project-item .project-item__information-container { padding: 1rem; display: flex; flex-direction: column; justify-content: center; }
 
