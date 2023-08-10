@@ -41,19 +41,17 @@ html { font-size: 16px; }
 
 .page.page--projects .page-content .group-title { color: #000; font-family: "Roboto", sans-serif; font-size: 2rem; font-weight: 600; line-height: 2.5rem; letter-spacing: 1px; }
 
-.page.page--projects .page-content .project-item { flex-direction: column; justify-content: space-between; flex: 100%; padding: 0; display: flex; justify-content: flex-start; }
+.page.page--projects .page-content .project-item { flex-direction: column; justify-content: space-between; flex: 100%; padding: 0; display: flex; justify-content: flex-start; transition: 250ms transform ease-in-out; }
 
-.page.page--projects .page-content .project-item:hover .project-item__image-container .project-item__image { opacity: 1; }
+.page.page--projects .page-content .project-item:hover { transform: scale(1.1); }
+
+.page.page--projects .page-content .project-item:hover .project-item__image-container .project-item__image { height: 100%; width: auto; max-width: 15rem; }
 
 .page.page--projects .page-content .project-item.project-item--side .project-item__image-container { padding: 0; }
 
-.page.page--projects .page-content .project-item.project-item--side .project-item__image-container .project-item__image { width: 10rem; }
+.page.page--projects .page-content .project-item .project-item__image-container { border-right: 1px dashed black; display: flex; align-items: center; padding: 0; transition: 250ms padding ease-in-out; }
 
-.page.page--projects .page-content .project-item.project-item--ecotrash .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--trailer .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--family-calendar .project-item__image-container .project-item__image, .page.page--projects .page-content .project-item.project-item--totalizator .project-item__image-container .project-item__image { width: 9rem; margin: .5rem; border-radius: 1rem; }
-
-.page.page--projects .page-content .project-item .project-item__image-container { padding: 1rem; border-right: 1px dashed black; display: flex; align-items: center; }
-
-.page.page--projects .page-content .project-item .project-item__image-container .project-item__image { width: 8rem; height: auto; object-fit: contain; opacity: .125; transition: 100ms opacity ease-in-out; }
+.page.page--projects .page-content .project-item .project-item__image-container .project-item__image { height: auto; object-fit: contain; width: 0; overflow: hidden; transition: 250ms width ease-in-out; }
 
 .page.page--projects .page-content .project-item .project-item__information-container { padding: 1rem; display: flex; flex-direction: column; justify-content: center; }
 

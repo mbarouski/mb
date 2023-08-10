@@ -39,51 +39,34 @@ html {
         padding: 0;
         display: flex;
         justify-content: flex-start;
+        transition: 250ms transform ease-in-out;
 
         &:hover {
+          transform: scale(1.1);
+
           .project-item__image-container {
             .project-item__image {
-              opacity: 1;
+              height: 100%;
+              width: auto;
+              max-width: 15rem;
             }
           }
-        }
-
-        &.project-item--side {
-          .project-item__image-container {
-            padding: 0;
-
-            .project-item__image {
-              width: 10rem;
-            }
-          }
-        }
-
-        &.project-item--ecotrash,                                
-        &.project-item--trailer,                                  
-        &.project-item--family-calendar,                            
-        &.project-item--totalizator {
-          .project-item__image-container {
-            .project-item__image {
-              width: 9rem;        
-              margin: .5rem;                                     
-              border-radius: 1rem;                            
-            }
-          }                  
         }
 
         .project-item__image-container {
-          padding: 1rem;
           border-right: 1px dashed black;
           display: flex;
           align-items: center;
+          padding: 0;
+          transition: 250ms padding ease-in-out;
 
           .project-item__image {
-            width: 8rem;
             height: auto;
             object-fit: contain;
 
-            opacity: .125;
-            transition: 100ms opacity ease-in-out;
+            width: 0;
+            overflow: hidden;
+            transition: 250ms width ease-in-out;
           }
         }
 
