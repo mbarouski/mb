@@ -47,8 +47,6 @@ html { font-size: 16px; }
 
 .page.page--projects .page-content .project-item:hover .project-item__image-container .project-item__image { height: 100%; width: auto; max-width: 15rem; }
 
-.page.page--projects .page-content .project-item.project-item--side .project-item__image-container { padding: 0; }
-
 .page.page--projects .page-content .project-item .project-item__image-container { border-right: 1px dashed black; display: flex; align-items: center; padding: 0; transition: 250ms padding ease-in-out; }
 
 .page.page--projects .page-content .project-item .project-item__image-container .project-item__image { height: auto; object-fit: contain; width: 0; overflow: hidden; transition: 250ms width ease-in-out; }

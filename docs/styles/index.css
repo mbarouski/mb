@@ -23,6 +23,24 @@ hr { background-color: #6f4bd2; border: none; display: block; height: 2px; margi
 
 .link:hover { color: #363636; text-decoration: none; }
 
+.desktop-icons { position: absolute; top: 0; left: 0; padding: 1rem; display: flex; flex-wrap: wrap; }
+
+.desktop-icon { background: none; border: none; padding: 0.5rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+
+.desktop-icon:hover { background-color: rgba(255, 255, 255, 0.1); }
+
+.desktop-icon.desktop-icon--selected { background-color: rgba(135, 206, 250, 0.5); }
+
+.desktop-icon img { max-width: 3.5rem; max-height: 3.5rem; width: 100%; height: 100%; }
+
+.desktop-icon p { margin: 0.5rem 0; color: #fff; text-align: center; }
+
+.desktop-icon input { display: none; }
+
+.desktop-icon.desktop-icon--rename-mode input { display: initial; }
+
+.desktop-icon.desktop-icon--rename-mode p { display: none; }
+
 html { font-size: 16px; }
 
 @media only screen and (min-width: 640px) { html { font-size: 24px; } }
