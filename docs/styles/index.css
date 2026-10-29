@@ -1,78 +1,211 @@
 @charset "UTF-8";
-ul { list-style: none; }
+ul {
+  list-style: none;
+}
 
-* { font-family: monospace; }
+* {
+  font-family: monospace;
+}
 
-body { margin: 0; }
+body {
+  margin: 0;
+}
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
-a:hover { text-decoration: underline; }
+ul {
+  padding: 0;
+}
 
-ul { padding: 0; }
+h1 {
+  font-size: 2rem;
+}
 
-h1 { font-size: 2rem; }
+h2 {
+  font-size: 1.75rem;
+}
 
-h2 { font-size: 1.75rem; }
+h3 {
+  font-size: 1.5rem;
+}
 
-h3 { font-size: 1.5rem; }
+hr {
+  background-color: hsl(256, 60%, 56%);
+  border: none;
+  display: block;
+  height: 2px;
+  margin: 1rem 0;
+}
 
-hr { background-color: #6f4bd2; border: none; display: block; height: 2px; margin: 1rem 0; }
+.link {
+  color: hsl(256, 60%, 56%);
+  text-decoration: none;
+  cursor: pointer;
+}
+.link:hover {
+  color: #363636;
+  text-decoration: none;
+}
 
-.link { color: #6f4bd2; text-decoration: none; cursor: pointer; }
+.desktop-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.link:hover { color: #363636; text-decoration: none; }
+.desktop-icon {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desktop-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.desktop-icon.desktop-icon--selected {
+  background-color: rgba(135, 206, 250, 0.5);
+}
 
-.desktop-icons { position: absolute; top: 0; left: 0; padding: 1rem; display: flex; flex-wrap: wrap; }
+.desktop-icon img {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  width: 100%;
+  height: 100%;
+}
 
-.desktop-icon { background: none; border: none; padding: 0.5rem; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+.desktop-icon p {
+  margin: 0.5rem 0;
+  color: #fff;
+  text-align: center;
+}
 
-.desktop-icon:hover { background-color: rgba(255, 255, 255, 0.1); }
+.desktop-icon input {
+  display: none;
+}
 
-.desktop-icon.desktop-icon--selected { background-color: rgba(135, 206, 250, 0.5); }
+.desktop-icon.desktop-icon--rename-mode input {
+  display: initial;
+}
+.desktop-icon.desktop-icon--rename-mode p {
+  display: none;
+}
 
-.desktop-icon img { max-width: 3.5rem; max-height: 3.5rem; width: 100%; height: 100%; }
+html {
+  font-size: 16px;
+}
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 24px;
+  }
+}
 
-.desktop-icon p { margin: 0.5rem 0; color: #fff; text-align: center; }
-
-.desktop-icon input { display: none; }
-
-.desktop-icon.desktop-icon--rename-mode input { display: initial; }
-
-.desktop-icon.desktop-icon--rename-mode p { display: none; }
-
-html { font-size: 16px; }
-
-@media only screen and (min-width: 640px) { html { font-size: 24px; } }
-
-.page.page--index .page-content { display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; }
-
-.page.page--index .page-content .top { background-color: #6f4bd2; padding: 1.5rem; display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; }
-
-.page.page--index .page-content .top .top-content { max-width: 100%; width: fit-content; height: fit-content; padding: 0; border-radius: 0.5rem; }
-
-.page.page--index .page-content .top .top-content .fullname { text-align: center; color: #000; margin: 0; background-color: #ffdd57; padding: 1rem; outline: 2px solid #000; outline-offset: -1px; position: relative; }
-
-.page.page--index .page-content .top .top-content .fullname:hover { color: transparent; }
-
-.page.page--index .page-content .top .top-content .fullname:hover:after { color: #000; position: absolute; top: 0; left: 0; width: 100%; height: 100%; content: 'Maksim Baroŭski'; align-items: center; justify-content: center; display: flex; }
-
-.page.page--index .page-content .top .top-content .role-list { margin: 0; text-align: center; background-color: #ffdd57; padding: 1rem; outline: 2px solid #000; outline-offset: -1px; }
-
-.page.page--index .page-content .top .top-content .role-list .role-item { color: #000; font-size: 1rem; }
-
-.page.page--index .page-content .top .top-content .role-list .role-item a { color: #6f4bd2; font-size: inherit; }
-
-.page.page--index .page-content .top .top-content .page-list { display: flex; flex-direction: row; justify-content: center; align-items: stretch; flex-wrap: wrap; margin: 0; }
-
-.page.page--index .page-content .top .top-content .page-list .page-item { margin: 0; text-align: center; background-color: #ffdd57; height: fit-content; outline: 2px solid #000; outline-offset: -1px; flex: 1; }
-
-.page.page--index .page-content .top .top-content .page-list .page-item a { color: #000; display: block; width: calc(100% - 2rem); height: auto; padding: 1rem; }
-
-.page.page--index .page-content .top .top-content .page-list .page-item a:hover { text-decoration: none; }
-
-.page.page--index .page-content .top .top-content .page-list .page-item a span { font-weight: bold; }
-
-.page.page--index .page-content .top .top-content .page-list .page-item a svg { width: .875rem; height: .875rem; }
+.page.page--index .page-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.page.page--index .page-content .top {
+  background-color: hsl(256, 60%, 56%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.page.page--index .page-content .top .top-content {
+  max-width: 100%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  border-radius: 0.5rem;
+}
+.page.page--index .page-content .top .top-content .fullname {
+  text-align: center;
+  color: #000;
+  margin: 0;
+  background-color: #ffdd57;
+  padding: 1rem;
+  outline: 2px solid #000;
+  outline-offset: -1px;
+  position: relative;
+}
+.page.page--index .page-content .top .top-content .fullname:hover {
+  color: transparent;
+}
+.page.page--index .page-content .top .top-content .fullname:hover:after {
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "Maksim Baroŭski";
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.page.page--index .page-content .top .top-content .role-list {
+  margin: 0;
+  text-align: center;
+  background-color: #ffdd57;
+  padding: 1rem;
+  outline: 2px solid #000;
+  outline-offset: -1px;
+}
+.page.page--index .page-content .top .top-content .role-list .role-item {
+  color: #000;
+  font-size: 1rem;
+}
+.page.page--index .page-content .top .top-content .role-list .role-item a {
+  color: hsl(256, 60%, 56%);
+  font-size: inherit;
+}
+.page.page--index .page-content .top .top-content .page-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.page.page--index .page-content .top .top-content .page-list .page-item {
+  margin: 0;
+  text-align: center;
+  background-color: #ffdd57;
+  height: fit-content;
+  outline: 2px solid #000;
+  outline-offset: -1px;
+  flex: 1;
+}
+.page.page--index .page-content .top .top-content .page-list .page-item a {
+  color: #000;
+  display: block;
+  width: calc(100% - 2rem);
+  height: auto;
+  padding: 1rem;
+}
+.page.page--index .page-content .top .top-content .page-list .page-item a:hover {
+  text-decoration: none;
+}
+.page.page--index .page-content .top .top-content .page-list .page-item a span {
+  font-weight: bold;
+}
+.page.page--index .page-content .top .top-content .page-list .page-item a svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
 
 /*# sourceMappingURL=index.css.map */
