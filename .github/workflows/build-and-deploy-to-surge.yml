@@ -1,23 +1,22 @@
 name: Deploy to surge.sh
 
-on: [push]
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
 
 jobs:
-  build:
+  deploy:
 
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
+    runs-on: ubuntu-24.04
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Install surge and Deploy
-      run: |
-        yarn add surge
-        ./deploy-to-surge.sh
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+    - name: Deploy
+      run: ./deploy-to-surge.sh
       env:
         SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        CI: true
