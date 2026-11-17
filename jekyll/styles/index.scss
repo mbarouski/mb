@@ -1,9 +1,9 @@
 ---
 ---
 
-@import 'utils.scss';
-@import 'colors.scss';
-@import 'desktop-icons.scss';
+@use 'utils' as *;
+@use 'colors' as *;
+@use 'desktop-icons';
 
 html {
   font-size: 16px;

@@ -1,10 +1,10 @@
 ---
 ---
 
-@import 'utils.scss';
-@import 'colors.scss';
-@import 'typography.scss';
-@import 'nice-table.scss';
+@use 'utils' as *;
+@use 'colors' as *;
+@use 'typography' as *;
+@use 'nice-table';
 
 html {
   font-size: 16px;
