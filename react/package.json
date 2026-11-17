@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "cv": "tectonic --outdir public/assets ../cv/CV.tex",
+    "cv": "node -e \"require('fs').mkdirSync('public/assets', { recursive: true })\" && tectonic --outdir public/assets ../cv/CV.tex",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
