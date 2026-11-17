@@ -1,7 +1,8 @@
 # My web pages
 
-- `jekyll` - Jekyll implementation of my pages
-- `docs` - Jekyll build used in GitHub Pages and for deployment to Surge
+- `react` - React (Vite) implementation of my page: `npm install`, `npm run dev`, `npm run build`
+- `docs` - React build (`npm run build` in `react`) used in GitHub Pages and for deployment to Surge
+- `jekyll` - previous Jekyll implementation of my pages (no longer built)
 - `base64-webpage` - simple HTML page in base64 string which can be opened in browser
 - `vue` - Vue implementation of my website (deprecated since Vue is too much for my pages requirements)
 

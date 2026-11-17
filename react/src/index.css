@@ -1,0 +1,194 @@
+:root {
+  --color-yellow: #ffdd57;
+  --color-white: #fff;
+  --color-purple: hsl(256deg, 60%, 56%);
+  --color-black: #000;
+}
+
+html {
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 640px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+* {
+  font-family: monospace;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.top {
+  background-color: var(--color-purple);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.top-content {
+  max-width: 100%;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  border-radius: 0.5rem;
+}
+
+.fullname {
+  text-align: center;
+  color: var(--color-black);
+  margin: 0;
+  background-color: var(--color-yellow);
+  padding: 1rem;
+  outline: 2px solid var(--color-black);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.fullname:hover {
+  color: transparent;
+}
+
+/* "u" becomes Belarusian "ў" (U+045E) on hover */
+.fullname:hover::after {
+  color: var(--color-black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: 'Maksim Baro\045Eski';
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.role-list {
+  margin: 0;
+  text-align: center;
+  background-color: var(--color-yellow);
+  padding: 1rem;
+  outline: 2px solid var(--color-black);
+  outline-offset: -1px;
+}
+
+.role-item {
+  color: var(--color-black);
+  font-size: 1rem;
+}
+
+.role-item a {
+  color: var(--color-purple);
+  font-size: inherit;
+}
+
+.page-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.page-item {
+  margin: 0;
+  text-align: center;
+  background-color: var(--color-yellow);
+  height: fit-content;
+  outline: 2px solid var(--color-black);
+  outline-offset: -1px;
+  flex: 1;
+}
+
+.page-item a {
+  color: var(--color-black);
+  display: block;
+  width: calc(100% - 2rem);
+  height: auto;
+  padding: 1rem;
+}
+
+.page-item a:hover {
+  text-decoration: none;
+}
+
+.page-item span {
+  font-weight: bold;
+}
+
+.page-item svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.desktop-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.desktop-icon {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desktop-icon:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-icon.desktop-icon--selected {
+  background-color: rgba(135, 206, 250, 0.5);
+}
+
+.desktop-icon img {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop-icon p {
+  margin: 0.5rem 0;
+  color: var(--color-white);
+  text-align: center;
+}

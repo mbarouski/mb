@@ -10,12 +10,23 @@ jobs:
 
     runs-on: ubuntu-24.04
 
+    defaults:
+      run:
+        working-directory: react
+
     steps:
     - uses: actions/checkout@v5
     - uses: actions/setup-node@v5
       with:
-        node-version: 22
+        node-version: 24
+        cache: npm
+        cache-dependency-path: react/package-lock.json
+    - name: Install dependencies
+      run: npm ci
+    - name: Build
+      run: npm run build
     - name: Deploy
+      working-directory: .
       run: ./deploy-to-surge.sh
       env:
         SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
