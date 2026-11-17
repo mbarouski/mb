@@ -1,0 +1,131 @@
+% CV of Maksim Barouski (XeLaTeX via Tectonic).
+% Build into the website: `npm run cv` in ../react -> react/public/assets/CV.pdf
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, top=2.2cm, bottom=2.2cm, left=2.2cm, right=2.2cm]{geometry}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{RobotoMono}[
+  Extension = .otf,
+  UprightFont = *-Regular,
+  BoldFont = *-Bold,
+  ItalicFont = *-Italic,
+]
+
+\newcommand{\lastupdate}{14 Apr 2025}
+
+\definecolor{linkblue}{HTML}{1155CC}
+\newcommand{\link}[1]{\href{#1}{\textcolor{linkblue}{#1}}}
+
+\pagestyle{empty}
+\setlength{\parindent}{2.5em}
+\setlength{\parskip}{0pt}
+\linespread{1.15}
+\frenchspacing
+% no hyphenation, like the original CV
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=3em
+
+% \section*-like heading: bold, no numbering
+\newcommand{\cvsection}[1]{%
+  \par\bigskip\noindent\textbf{#1}\par\medskip}
+
+% {title}{period}{place}
+\newcommand{\cventry}[3]{%
+  \par\medskip\noindent\textbf{#1}\\
+  {\small #2}\\
+  {\small #3}\par\medskip}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.3\textwidth}
+  \vspace{0pt}
+  \includegraphics[width=\linewidth, trim=0 120 0 120, clip]{photo.jpg}
+\end{minipage}%
+\hspace{0.05\textwidth}%
+\begin{minipage}[t]{0.65\textwidth}
+  \vspace{0pt}
+  {\LARGE\textbf{Maksim Barouski}}\par\medskip
+  Software Engineer\par\bigskip
+  \faMapMarker*\enspace Warsaw, Poland\par
+  \faPhone\enspace +48 789 307 632\par
+  \faEnvelope[regular]\enspace \href{mailto:maksim.barouski+cv@gmail.com}{maksim.barouski+cv@gmail.com}\par
+\end{minipage}
+
+\vspace{1em}
+
+\cvsection{Work}
+
+\cventry{Software Engineer Tech Lead at Google}{Jul'23 - now}{Warsaw, Poland}
+
+I started working in the GKE UI area where I initially joined a team
+responsible for Anthos cluster lifecycle UI. After 7 months working there,
+I became a tech lead of a newly formed team responsible for GKE Upgrades UI.
+Since the beginning of 2025, the team started owning features end-to-end.
+
+\cventry{Senior Full Stack Engineer at Montro}{Oct'19 - Jun'23}{Remote}
+
+Montro is a pre-owned luxury watches marketplace. I have been working there
+from the beginning till the first purchases through the platform as lead
+frontend engineer and senior backend engineer, periodically doing DevOps work,
+and continue working there.
+
+As a frontend lead, I take application-level technical decisions, advise
+engineers, review pull requests, and mentor newcomers.
+
+As a full stack engineer, I deliver features on both ends, e.g. payments
+system, search module, listings scraping system, taxonomy module. Also,
+I develop and maintain libraries and tools, e.g. configurator of Google Cloud
+load balancer based on data about registered in Consul services, and solve
+different types of emerging issues.
+
+Tech stack includes Kotlin/Java + Spring, Golang, Vue + TypeScript,
+PostgreSQL, Cassandra, Elasticsearch, Kafka, Google Cloud, Terraform,
+SaltStack, Nomad, Consul, Docker, ELK, Prometheus, Grafana, etc.
+
+\cventry{Full Stack Engineer at Senior Node}{Jan'17 - Jul'20}{Minsk, Belarus}
+
+Development of server apps (Java/Kotlin + Spring, Node.js), microservices
+(Golang), client apps (JavaScript, TypeScript, Vue, Angular, React), storages
+(Neo4j, Cassandra, Redis, MongoDB, MSSQL, PostgreSQL, Hazelcast),
+infrastructure (Google Cloud, SaltStack, Terraform, Nomad, Consul, etc.),
+mobile apps (Swift). Development of and contribution into private and
+open-source libraries and tools.
+
+\cvsection{Education}
+
+\cventry{Belarusian State University of Informatics and Radioelectronics}{2014 - 2018}{Minsk, Belarus}
+
+Bachelor of Computer Science, Faculty of Computer Systems and Networks.
+Excellent mark, red diploma.
+
+\cvsection{Profile}
+
+I am an ambitious guy who is interested in solving challenging tasks with
+caring about quality. I have a strong technical background based on studying
+at Belarusian State University of Informatics and Radioelectronics and more
+than 5 years of production experience on projects including pre-owned luxury
+watches marketplace, media platform oriented on nature protection, website
+builder for creatives.
+
+I can deliver features in single mode as well as in a collaboration with other
+engineers. Furthermore, I'm able to play a lead role in a technical team.
+
+\cvsection{Other contacts}
+
+\noindent Telegram: \link{https://t.me/mbarouski}\\
+Website: \link{https://maksim-barouski.surge.sh}
+
+\bigskip
+\noindent -{}-{}-
+
+\bigskip
+\noindent\textit{Last update: \lastupdate}
+
+\end{document}

@@ -23,6 +23,19 @@ jobs:
         cache-dependency-path: react/package-lock.json
     - name: Install dependencies
       run: npm ci
+    - name: Install Tectonic
+      working-directory: ${{ runner.temp }}
+      env:
+        TECTONIC_VERSION: 0.17.0
+        TECTONIC_SHA256: 1a715688baf591e650c8aeb160ae934e181685eecbb38b317de30b269ac5d606
+      run: |
+        archive="tectonic-${TECTONIC_VERSION}-x86_64-unknown-linux-gnu.tar.gz"
+        curl -fsSLo "$archive" "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${TECTONIC_VERSION}/${archive}"
+        echo "${TECTONIC_SHA256}  ${archive}" | sha256sum -c -
+        mkdir -p tectonic && tar -xzf "$archive" -C tectonic
+        echo "$PWD/tectonic" >> "$GITHUB_PATH"
+    - name: Build CV
+      run: npm run cv
     - name: Build
       run: npm run build
     - name: Deploy
