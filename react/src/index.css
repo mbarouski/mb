@@ -1,6 +1,5 @@
 :root {
   --color-yellow: #ffdd57;
-  --color-white: #fff;
   --color-purple: hsl(256deg, 60%, 56%);
   --color-black: #000;
 }
@@ -146,49 +145,4 @@ h1 {
 
 .page-item span {
   font-weight: bold;
-}
-
-.page-item svg {
-  width: 0.875rem;
-  height: 0.875rem;
-}
-
-.desktop-icons {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.desktop-icon {
-  background: none;
-  border: none;
-  padding: 0.5rem;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.desktop-icon:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.desktop-icon.desktop-icon--selected {
-  background-color: rgba(135, 206, 250, 0.5);
-}
-
-.desktop-icon img {
-  max-width: 3.5rem;
-  max-height: 3.5rem;
-  width: 100%;
-  height: 100%;
-}
-
-.desktop-icon p {
-  margin: 0.5rem 0;
-  color: var(--color-white);
-  text-align: center;
 }
