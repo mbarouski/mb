@@ -143,6 +143,9 @@ h1 {
   text-decoration: none;
 }
 
-.page-item span {
-  font-weight: bold;
+.page-item svg {
+  display: block;
+  margin: 0 auto;
+  width: 1rem;
+  height: 1rem;
 }
