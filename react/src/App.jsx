@@ -5,6 +5,7 @@ const roles = [
 
 const links = [
   { url: 'https://www.linkedin.com/in/maksim-barouski/', name: 'LinkedIn' },
+  { url: 'https://www.instagram.com/photodos/', name: 'Photography' },
 ];
 
 export default function App() {
